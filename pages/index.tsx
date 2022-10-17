@@ -3,6 +3,7 @@ import Footer from "../components/footer/Footer";
 import Header from "../components/Header";
 import Hero from "../components/hero/Hero";
 import Projects from "../components/projects/Projects";
+import ScrollToTop from "../components/scrollToTop";
 import Skills from "../components/skills";
 import Subhero from "../components/Subhero";
 import { projectContent } from "../utils/contentData/ProjectContent";
@@ -16,6 +17,7 @@ const index = () => {
       <Skills />
       <Projects projectContent={projectContent} />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };

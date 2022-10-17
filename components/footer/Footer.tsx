@@ -12,12 +12,13 @@ const Footer = () => {
       py="4"
       align="center"
       direction="column"
-      px="20rem"
       gap="12"
-      w="100%"
+      w="100vw"
     >
       <Text
-        w="max-content"
+        w="100%"
+        px="3rem"
+        align="center"
         fontSize={{ base: "8", md: "10", lg: "10" }}
         lineHeight="30px"
         fontWeight="semibold"

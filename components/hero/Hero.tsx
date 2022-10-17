@@ -14,13 +14,13 @@ import SocialButtons from "../SocialButtons";
 
 const Hero = () => {
   return (
-    <Flex minH="95vh" minW="100vw" w="100vw">
+    <Flex minH="100vh" minW="100vw" w="100vw">
       <Image
         alt="bg"
         src="/assets/bg-image.png.png"
         position="absolute"
         w="100%"
-        minH="80%"
+        minH="100%"
         zIndex={-1}
       />
 

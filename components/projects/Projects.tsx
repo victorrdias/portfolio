@@ -8,7 +8,7 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
       minH="100vh"
-      p={{ base: "2rem", md: "6rem" }}
+      p={{ base: "1rem", md: "4rem", lg: "6rem" }}
       align="flex-start"
       direction="column"
       gap={{ base: "10", md: "20", lg: "20" }}
