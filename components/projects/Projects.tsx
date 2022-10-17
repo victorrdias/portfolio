@@ -18,7 +18,7 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         textAlign="center"
         justifyContent="center"
         bgColor="#192211"
-        borderRadius="50"
+        borderRadius="30"
         p={{ base: "0.5rem", md: "1rem" }}
         color="white"
         fontWeight="bold"
@@ -43,6 +43,7 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         {projectContent.map((project) => (
           <Project
             key={project.description}
+            link={project.link}
             image={project.image}
             description={project.description}
           />

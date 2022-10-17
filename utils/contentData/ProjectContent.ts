@@ -4,26 +4,13 @@ export const projectContent: ProjectProps[] = [
   {
     image: "/assets/gastura.svg",
     description:
-      "1 Here goes accordion text. You can detach this instance if you want other components than text inside it.",
+      "Gastura foi um projetinho mto do zica, parceria fechada e os caraio",
+    link: "https://github.com/cptvictor95/gastura",
   },
   {
     image: "/assets/pokeball.png",
     description:
-      "2 Here goes accordion text. You can detach this instance if you want other components than text inside it.",
-  },
-  {
-    image: "/assets/pokeball.png",
-    description:
-      "3 Here goes accordion text. You can detach this instance if you want other components than text inside it.",
-  },
-  {
-    image: "/assets/gastura.svg",
-    description:
-      "4 Here goes accordion text. You can detach this instance if you want other components than text inside it.",
-  },
-  {
-    image: "/assets/pokeball.png",
-    description:
-      "5 Here goes accordion text. You can detach this instance if you want other components than text inside it.",
+      "Pokedex foi um projetinho bem loco, maluco, varios aprendizado",
+    link: "https://github.com/victorrdias/pokedex",
   },
 ];

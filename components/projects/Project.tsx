@@ -1,32 +1,32 @@
 import { Flex, Button, Text, Image } from "@chakra-ui/react";
+import Link from "next/link";
 import React from "react";
 import { ProjectProps } from "../../utils/interface/ProjectProps";
 
-const Project: React.FC<ProjectProps> = ({ image, description }) => {
+const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
   const handleOnClick = () => {
     if (image === "gastura.svg") {
     }
   };
   return (
     <Flex gap={{ base: "5", md: "10" }} pt={{ base: "4", md: "6", lg: "8" }}>
-      <Button
-        boxSize={{ base: "5rem", sm: "7rem", md: "8rem", lg: "10rem" }}
-        minW={{ base: "5rem", sm: "7rem", md: "8rem", lg: "10rem" }}
-        bgColor="#B0C799"
-        borderRadius="20"
-        onClick={() => {
-          handleOnClick();
-        }}
-        p="1"
-      >
-        <Image
-          src={image}
-          alt="project-image"
+      <Link href={link}>
+        <Button
+          boxSize={{ base: "5rem", sm: "7rem", md: "8rem", lg: "10rem" }}
+          minW={{ base: "5rem", sm: "7rem", md: "8rem", lg: "10rem" }}
+          bgColor="#B0C799"
           borderRadius="20"
-          h="100%"
-          border="2px"
-        />
-      </Button>
+          p="1"
+        >
+          <Image
+            src={image}
+            alt="project-image"
+            borderRadius="20"
+            h="100%"
+            border="2px"
+          />
+        </Button>
+      </Link>
       <Text
         overflowY="auto"
         bgColor="#B0C799"
