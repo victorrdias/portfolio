@@ -1,5 +1,4 @@
 import {
-  Button,
   Flex,
   Grid,
   GridItem,
@@ -11,17 +10,17 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
-import SocialButtons from "./SocialButtons";
+import SocialButtons from "../SocialButtons";
 
 const Hero = () => {
   return (
-    <Flex>
+    <Flex minH="95vh" minW="100vw" w="100vw">
       <Image
         alt="bg"
         src="/assets/bg-image.png.png"
         position="absolute"
         w="100%"
-        h="95vh"
+        minH="100%"
         zIndex={-1}
       />
 
@@ -30,9 +29,9 @@ const Hero = () => {
           as={Flex}
           direction="column"
           py={{ base: "14rem", md: "20rem", lg: "14rem" }}
-          px={{ base: "2rem", md: "6rem", lg: "8rem", xl: "8rem" }}
+          pl={{ base: "2rem", md: "6rem", lg: "8rem", xl: "10rem" }}
+          pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
           gap="11rem"
-          w={{ base: "15rem", md: "30rem", lg: "40rem", xl: "50rem" }}
         >
           <Text
             fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
@@ -42,21 +41,20 @@ const Hero = () => {
           >
             ola, eu sou o vituxo dev.bla bla, pau na maquina. front end
           </Text>
-
-          {/* <Button w="12rem">Linkedin</Button> */}
         </GridItem>
 
         <GridItem
-          px={{ base: "5", md: "20", xl: "20" }}
-          pt={{ base: "14rem", md: "20rem", lg: "10rem" }}
+          as={Flex}
+          align="flex-end"
+          px={{ base: "8", md: "36", xl: "40" }}
+          pt={{ base: "8rem", md: "20rem", lg: "10rem" }}
           direction="column"
           gap="12"
-          as={Flex}
         >
           <Image
             boxSize={{
               base: "6rem",
-              md: "10rem",
+              md: "8rem",
               lg: "15rem",
               xl: "20rem",
             }}
@@ -64,7 +62,12 @@ const Hero = () => {
             alt="photo"
             src="/assets/hero-img.png"
           />
-          <Flex direction="column" alignItems="center">
+
+          <Flex
+            pl={{ md: "2", lg: "23rem" }}
+            alignItems="center"
+            direction="column"
+          >
             <SocialButtons />
           </Flex>
         </GridItem>

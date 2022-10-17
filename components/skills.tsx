@@ -2,16 +2,16 @@ import { Container, Flex, Text, Image } from "@chakra-ui/react";
 import React from "react";
 import SocialButtons from "./SocialButtons";
 
-const Subhero = () => {
+const Skills = () => {
   return (
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "10rem" }}
       h="100vh"
-      bgColor="#B0C799"
+      bgColor="#192211"
       align="center"
     >
       <Flex
-        bgColor="#192211"
+        bgColor="#B0C799"
         maxW={{ base: "18rem", md: "23rem", lg: "30rem", xl: "40rem" }}
         minH="29rem"
         borderRadius="50"
@@ -21,26 +21,26 @@ const Subhero = () => {
         p={{ base: "1.5rem", md: "3rem" }}
       >
         <Text
-          color="white"
+          color="black"
           fontWeight="bold"
           fontSize={{ base: "30", md: "35", lg: "40" }}
           letterSpacing={3}
           lineHeight={{ base: "0,5", md: "1" }}
         >
-          Sobre mim
+          Habilidades
         </Text>
         <Text
           fontSize={{ base: "12", md: "20", lg: "25" }}
           lineHeight="30px"
           fontWeight="semibold"
           letterSpacing={1}
-          color="white"
+          color="black"
         >
-          um tanto quanto gay, mas apaixonado pela viadagem, buscando sempre
-          nossos meios de exercer essa profissao tao maravilhosa. Sou graduado
-          em boiolice, mas transicionei de carreira assim que terminei a
-          faculdade, sou otimo em me comunicar com bichas, e tenho ansia pra
-          aprender mais sobre as lgtbs
+          Conhecido como mago do css e do chakra UI, desenvolvo com a biblioteca
+          JavaScript React js, unido ao TypeScript, NextJS e Firebase, sou
+          profissional em fazer pagina bonitinha, e meter o louco na rapazeada.
+          Conhecimentos bem mais ou menos em javaScript puro, e sei usar API e
+          trabalhar com contextos.
         </Text>
       </Flex>
       <Image
@@ -58,4 +58,4 @@ const Subhero = () => {
   );
 };
 
-export default Subhero;
+export default Skills;
