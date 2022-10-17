@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/footer/Footer";
 import Header from "../components/Header";
 import Hero from "../components/hero/Hero";
 import Projects from "../components/projects/Projects";
@@ -14,6 +15,7 @@ const index = () => {
       <Subhero />
       <Skills />
       <Projects projectContent={projectContent} />
+      <Footer />
     </>
   );
 };

@@ -20,7 +20,7 @@ const Hero = () => {
         src="/assets/bg-image.png.png"
         position="absolute"
         w="100%"
-        minH="100%"
+        minH="80%"
         zIndex={-1}
       />
 

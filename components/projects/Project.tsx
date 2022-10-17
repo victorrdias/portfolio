@@ -3,6 +3,10 @@ import React from "react";
 import { ProjectProps } from "../../utils/interface/ProjectProps";
 
 const Project: React.FC<ProjectProps> = ({ image, description }) => {
+  const handleOnClick = () => {
+    if (image === "gastura.svg") {
+    }
+  };
   return (
     <Flex gap={{ base: "5", md: "10" }} pt={{ base: "4", md: "6", lg: "8" }}>
       <Button
@@ -11,7 +15,7 @@ const Project: React.FC<ProjectProps> = ({ image, description }) => {
         bgColor="#B0C799"
         borderRadius="20"
         onClick={() => {
-          console.log("clicou");
+          handleOnClick();
         }}
         p="1"
       >
@@ -31,6 +35,11 @@ const Project: React.FC<ProjectProps> = ({ image, description }) => {
         w="100%"
         textAlign="center"
         p="0.5rem"
+        fontSize={{ base: "12", md: "16", lg: "18" }}
+        lineHeight="30px"
+        fontWeight="semibold"
+        letterSpacing={1}
+        color="black"
       >
         {description}
       </Text>
