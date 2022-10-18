@@ -1,16 +1,23 @@
 import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import React from "react";
-import InvertedSocialButtons from "../socialButtons/invertedSocialButtons";
+import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 
 const Hero = () => {
   return (
-    <Flex minH="100vh" minW="100vw" w="100vw" bgColor="#192211">
+    <Flex
+      minH="100vh"
+      minW="100vw"
+      w="100vw"
+      //bgColor="#192211"
+      bgColor="#1d1d1d"
+    >
       <Grid
         templateColumns={{ base: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
         w="100%"
       >
         <GridItem
           as={Flex}
+          mt={{ base: "3.5rem", md: "0" }}
           direction="column"
           pl={{ base: "2rem", md: "6rem", lg: "8rem", xl: "10rem" }}
           pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
@@ -39,7 +46,7 @@ const Hero = () => {
           <Flex
             direction="column"
             align={{ base: "center", md: "center", lg: "center" }}
-            gap="5rem"
+            gap="7rem"
           >
             <Image
               display={{ base: "flex", md: "none" }}

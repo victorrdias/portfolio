@@ -10,7 +10,7 @@ const SocialButtons = () => {
     <Flex gap="6" direction="column" alignItems="center">
       <Link href="https://github.com/victorrdias" isExternal>
         <IconButton
-          color="#192211"
+          color="#090909"
           fontSize="60px"
           aria-label="github"
           icon={<AiFillGithub />}
@@ -21,11 +21,11 @@ const SocialButtons = () => {
             xl: "3.5rem",
           }}
           borderRadius="50"
-          borderColor="#192211"
+          borderColor="#090909"
           border="2px"
           _hover={{
-            color: "#B0C799",
-            bgColor: "#192211",
+            color: "white",
+            bgColor: "black",
           }}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />
@@ -46,13 +46,13 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             xl: "3.5rem",
           }}
           borderRadius="50"
-          color="#192211"
+          color="#090909"
           fontSize="45px"
-          borderColor="#192211"
+          borderColor="#090909"
           border="2px"
           _hover={{
-            color: "#B0C799",
-            bgColor: "#192211",
+            color: "white",
+            bgColor: "black",
           }}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />
@@ -71,13 +71,13 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             xl: "3.5rem",
           }}
           borderRadius="50"
-          color="#192211"
+          color="#090909"
           fontSize="60px"
-          borderColor="#192211"
+          borderColor="#090909"
           border="2px"
           _hover={{
-            color: "#B0C799",
-            bgColor: "#192211",
+            color: "white",
+            bgColor: "black",
           }}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />

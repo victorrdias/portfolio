@@ -13,4 +13,22 @@ export const projectContent: ProjectProps[] = [
       "Pokedex foi um projetinho bem loco, maluco, varios aprendizado",
     link: "https://github.com/victorrdias/pokedex",
   },
+  {
+    image: "/assets/pokeball.png",
+    description:
+      "Pokedex foi um projetinho bem loco, maluco, varios aprendizado",
+    link: "https://github.com/victorrdias/pokedex",
+  },
+  {
+    image: "/assets/pokeball.png",
+    description:
+      "Pokedex foi um projetinho bem loco, maluco, varios aprendizado",
+    link: "https://github.com/victorrdias/pokedex",
+  },
+  {
+    image: "/assets/pokeball.png",
+    description:
+      "Pokedex foi um projetinho bem loco, maluco, varios aprendizado",
+    link: "https://github.com/victorrdias/pokedex",
+  },
 ];

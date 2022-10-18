@@ -7,42 +7,43 @@ import Project from "./Project";
 const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
-      minH="100vh"
+      minH="75vh"
       px={{ base: "1rem", md: "4rem", lg: "6rem" }}
-      py={{ base: "3rem", md: "4rem", lg: "6rem" }}
+      py={{ base: "9rem", md: "4rem", lg: "6rem" }}
       align="flex-start"
       direction="column"
       gap={{ base: "10", md: "20", lg: "20" }}
-      bgColor="#B0C799"
+      bgColor="#1d1d1d"
     >
       <Text
         textAlign="center"
         justifyContent="center"
         variant="transparent"
-        border="2px"
+        border="1px"
         borderRadius="18"
         p={{ base: "0.5rem", md: "1rem" }}
-        borderColor="#192211"
+        borderColor="white"
         color="black"
+        bgColor="white"
         fontWeight="bold"
-        fontSize={{ base: "20", md: "30", lg: "35" }}
+        fontSize={{ base: "20", md: "25", lg: "30" }}
         letterSpacing={2}
-        lineHeight={{ base: "0,5", md: "1" }}
+        lineHeight={{ base: "0,5", md: "0.5" }}
         boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         Meus Projetos
       </Text>
       <Container
         border="1px"
-        borderInlineEndStyle="dashed"
-        borderColor="#192211"
-        borderRadius="30"
+        borderColor="black"
+        borderRadius="19"
         overflowY="auto"
         minW="100%"
         h="35rem"
         px={{ base: "1rem", md: "2.3rem" }}
         pb="6"
-        bgColor="#192211"
+        bgColor="white"
+        //bgColor="#1d1d1d"
         boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         {projectContent.map((project) => (
