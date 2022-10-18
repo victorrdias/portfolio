@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, IconButton, Link, Text } from "@chakra-ui/react";
-import SocialButtons from "../SocialButtons";
+import SocialButtons from "../socialButtons/SocialButtons";
 import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 

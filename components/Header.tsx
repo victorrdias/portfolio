@@ -6,12 +6,13 @@ const Header = () => {
     <Flex
       align="center"
       px="2"
-      bgColor="#192211"
+      bgColor="black"
       minH="5vh"
       w="100%"
       justify="space-between"
       position="fixed"
       zIndex={1}
+      opacity={0.65}
     >
       <Text color="white">vituxodev caraio</Text>
       <Button
