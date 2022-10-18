@@ -17,6 +17,10 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
           bgColor="#B0C799"
           borderRadius="20"
           p="1"
+          _hover={{
+            bgColor: "#192211",
+          }}
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         >
           <Image
             src={image}
@@ -24,6 +28,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             borderRadius="20"
             h="100%"
             border="2px"
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
           />
         </Button>
       </Link>
@@ -40,6 +45,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         fontWeight="semibold"
         letterSpacing={1}
         color="black"
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         {description}
       </Text>

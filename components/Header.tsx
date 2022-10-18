@@ -14,7 +14,11 @@ const Header = () => {
       zIndex={1}
     >
       <Text color="white">vituxodev caraio</Text>
-      <Button borderRadius="20" h="3vh">
+      <Button
+        borderRadius="10"
+        h="3vh"
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+      >
         PT/BR
       </Button>
     </Flex>

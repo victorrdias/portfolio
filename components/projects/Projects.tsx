@@ -8,7 +8,8 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
       minH="100vh"
-      p={{ base: "1rem", md: "4rem", lg: "6rem" }}
+      px={{ base: "1rem", md: "4rem", lg: "6rem" }}
+      py={{ base: "3rem", md: "4rem", lg: "6rem" }}
       align="flex-start"
       direction="column"
       gap={{ base: "10", md: "20", lg: "20" }}
@@ -17,14 +18,17 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       <Text
         textAlign="center"
         justifyContent="center"
-        bgColor="#192211"
-        borderRadius="30"
+        variant="transparent"
+        border="2px"
+        borderRadius="18"
         p={{ base: "0.5rem", md: "1rem" }}
-        color="white"
+        borderColor="#192211"
+        color="black"
         fontWeight="bold"
         fontSize={{ base: "20", md: "30", lg: "35" }}
-        letterSpacing={3}
+        letterSpacing={2}
         lineHeight={{ base: "0,5", md: "1" }}
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         Meus Projetos
       </Text>
@@ -32,13 +36,14 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         border="1px"
         borderInlineEndStyle="dashed"
         borderColor="#192211"
-        borderRadius="50"
+        borderRadius="30"
         overflowY="auto"
         minW="100%"
         h="35rem"
-        px={{ base: "1rem", md: "3rem" }}
+        px={{ base: "1rem", md: "2.3rem" }}
         pb="6"
         bgColor="#192211"
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         {projectContent.map((project) => (
           <Project

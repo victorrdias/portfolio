@@ -27,6 +27,7 @@ const SocialButtons = () => {
             color: "#B0C799",
             bgColor: "#192211",
           }}
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />
       </Link>
       <Link
@@ -53,6 +54,7 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             color: "#B0C799",
             bgColor: "#192211",
           }}
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />
       </Link>
       <Link
@@ -77,6 +79,7 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             color: "#B0C799",
             bgColor: "#192211",
           }}
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         />
       </Link>
     </Flex>

@@ -14,11 +14,12 @@ const Subhero = () => {
         bgColor="#192211"
         maxW={{ base: "18rem", md: "23rem", lg: "30rem", xl: "40rem" }}
         minH="29rem"
-        borderRadius="50"
+        borderRadius="30"
         opacity={0.9}
         direction="column"
         gap={{ base: "4", md: "12" }}
         p={{ base: "1.5rem", md: "3rem" }}
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         <Text
           color="white"
@@ -31,7 +32,7 @@ const Subhero = () => {
         </Text>
         <Text
           fontSize={{ base: "12", md: "20", lg: "25" }}
-          lineHeight="30px"
+          lineHeight="34px"
           fontWeight="semibold"
           letterSpacing={1}
           color="white"

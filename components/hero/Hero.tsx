@@ -14,15 +14,22 @@ import SocialButtons from "../SocialButtons";
 
 const Hero = () => {
   return (
-    <Flex minH="100vh" minW="100vw" w="100vw">
-      <Image
+    <Flex
+      minH="100vh"
+      minW="100vw"
+      w="100vw"
+      //background="linear-gradient(43deg, rgba(25,34,17,1) 48%, rgba(176,199,153,1) 100%)"
+      background="linear-gradient(43deg, rgba(25,34,17,1) 58%, rgba(176,199,153,1) 59%)"
+    >
+      {/* <Image
         alt="bg"
         src="/assets/bg-image.png.png"
         position="absolute"
         w="100%"
         minH="100%"
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         zIndex={-1}
-      />
+      /> */}
 
       <Grid templateColumns="repeat(2,1fr)">
         <GridItem
@@ -61,6 +68,7 @@ const Hero = () => {
             borderRadius="200"
             alt="photo"
             src="/assets/hero-img.png"
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
           />
 
           <Flex
