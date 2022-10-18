@@ -22,10 +22,10 @@ const Skills = () => {
         direction="column"
         gap={{ base: "4", md: "12" }}
         p={{ base: "1.5rem", md: "3rem" }}
-        // boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+        //boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         <Text
-          color="white"
+          color="#65CCA9"
           fontWeight="bold"
           fontSize={{ base: "30", md: "35", lg: "40" }}
           letterSpacing={3}
@@ -55,7 +55,6 @@ const Skills = () => {
         src="https://www.svgrepo.com/show/130116/web-development.svg"
         alt="asd"
       ></Image>
-      <Button color="black" />
     </Flex>
   );
 };

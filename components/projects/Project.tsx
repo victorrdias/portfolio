@@ -32,7 +32,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             borderRadius="20"
             h="100%"
             border="2px"
-            borderColor="black"
+            borderColor="#65CCA9"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
           />
         </Button>
@@ -42,7 +42,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         bgColor="#333333"
         //bgColor="gray.100"
         border="2px"
-        borderColor="black"
+        borderColor="#65CCA9"
         maxH={{ base: "5rem", sm: "7rem", md: "8rem", lg: "10rem" }}
         borderRadius="20"
         w="100%"

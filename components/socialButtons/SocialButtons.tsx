@@ -21,8 +21,8 @@ const SocialButtons = () => {
             xl: "3.5rem",
           }}
           borderRadius="50"
-          borderColor="#090909"
           border="2px"
+          bgColor="#65CCA9"
           _hover={{
             color: "white",
             bgColor: "black",

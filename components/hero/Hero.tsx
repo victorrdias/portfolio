@@ -28,7 +28,7 @@ const Hero = () => {
           <Flex direction="column" align="center">
             <Text
               fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
-              color="white"
+              color="#65CCA9"
               fontWeight="bold"
               letterSpacing={2}
             >
@@ -57,7 +57,9 @@ const Hero = () => {
                 xl: "20rem",
               }}
               borderRadius="200"
+              border="4px"
               alt="photo"
+              color="#65CCA9"
               src="/assets/hero-img.png"
               boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
             />
@@ -85,6 +87,8 @@ const Hero = () => {
             alt="photo"
             src="/assets/hero-img.png"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+            border="4px"
+            color="#65CCA9"
           />
         </GridItem>
       </Grid>

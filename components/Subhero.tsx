@@ -11,18 +11,18 @@ const Subhero = () => {
       align="center"
     >
       <Flex
-        bgColor="gray.100"
-        maxW={{ base: "18rem", md: "30rem", lg: "30rem", xl: "40rem" }}
+        //bgColor="gray.100"
+        maxW={{ base: "18rem", md: "30rem", lg: "35rem", xl: "45rem" }}
         minH="29rem"
         borderRadius="20"
-        opacity={0.9}
+        //opacity={0.9}
         direction="column"
         gap={{ base: "4", md: "12" }}
         p={{ base: "1.5rem", md: "3rem" }}
-        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+        //boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       >
         <Text
-          color="black"
+          color="#65CCA9"
           fontWeight="bold"
           fontSize={{ base: "30", md: "35", lg: "40" }}
           letterSpacing={3}
@@ -35,7 +35,7 @@ const Subhero = () => {
           lineHeight="34px"
           fontWeight="semibold"
           letterSpacing={1}
-          color="black"
+          color="gray.100"
         >
           um tanto quanto gay, mas apaixonado pela viadagem, buscando sempre
           nossos meios de exercer essa profissao tao maravilhosa. Sou graduado
