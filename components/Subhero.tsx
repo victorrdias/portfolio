@@ -7,7 +7,7 @@ const Subhero = () => {
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
-      h="100vh"
+      h={{ base: "100vh", lg: "80vh" }}
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"

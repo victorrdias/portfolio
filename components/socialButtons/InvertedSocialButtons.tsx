@@ -17,7 +17,7 @@ const InvertedSocialButtons = () => {
             base: "2.5rem",
             md: "3rem",
             lg: "3rem",
-            xl: "3.5rem",
+            xl: "3rem",
           }}
           borderRadius="50"
           borderColor="#090909"
@@ -42,7 +42,7 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             base: "2.5rem",
             md: "3rem",
             lg: "3rem",
-            xl: "3.5rem",
+            xl: "3rem",
           }}
           borderRadius="50"
           color="#090909"
@@ -67,7 +67,7 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             base: "2.5rem",
             md: "3rem",
             lg: "3rem",
-            xl: "3.5rem",
+            xl: "3rem",
           }}
           borderRadius="50"
           color="#090909"

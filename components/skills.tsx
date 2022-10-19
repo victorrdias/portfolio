@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
-      h="100vh"
+      h={{ base: "120vh", md: "80vh" }}
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
