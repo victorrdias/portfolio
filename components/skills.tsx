@@ -10,9 +10,7 @@ const Skills = () => {
       bgColor="#1d1d1d"
       align="center"
     >
-      <Flex w="100%" justify="flex-start">
-        <SocialButtons />
-      </Flex>
+      <Flex w="100%" justify="flex-start"></Flex>
       <Flex
         //bgColor="gray.100"
         maxW={{ base: "18rem", md: "30rem", lg: "35rem", xl: "45rem" }}

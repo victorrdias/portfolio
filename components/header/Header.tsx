@@ -1,11 +1,12 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import WebNav from "./WebNav";
 
 const Header = () => {
   return (
     <Flex
       align="center"
-      px="2"
+      px="6"
       bgColor="black"
       minH="5vh"
       w="100%"
@@ -14,14 +15,10 @@ const Header = () => {
       zIndex={1}
       opacity={0.65}
     >
-      <Text color="white">vituxodev caraio</Text>
-      <Button
-        borderRadius="10"
-        h="3vh"
-        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-      >
-        PT/BR
-      </Button>
+      <Text color="white" display={{ base: "none", md: "flex" }}>
+        vituxodev caraio
+      </Text>
+      <WebNav />
     </Flex>
   );
 };

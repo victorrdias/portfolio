@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../components/footer/Footer";
-import Header from "../components/Header";
+import Header from "../components/header/Header";
 import Hero from "../components/hero/Hero";
 import Projects from "../components/projects/Projects";
 import ScrollToTop from "../components/scrollToTop";
