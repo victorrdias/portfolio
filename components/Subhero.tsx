@@ -11,17 +11,17 @@ const Subhero = () => {
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
-      gap="2rem"
+      gap="1rem"
     >
-      <Flex direction="column" gap="4">
+      <Flex direction="column" gap="2">
         <Image
-          maxW="2rem"
+          maxW="1.6rem"
           alt="section"
           src="/assets/h2-1.svg"
-          opacity={0.25}
+          opacity={0.5}
         />
         <Text
-          px="4"
+          px="1.4rem"
           color="#65CCA9"
           fontWeight="bold"
           fontSize={{ base: "30", md: "35", lg: "40" }}
@@ -30,25 +30,18 @@ const Subhero = () => {
         >
           Sobre mim
         </Text>
-        <Flex justify="flex-end">
-          <Image
-            maxW="2rem"
-            opacity={0.25}
-            alt="section"
-            src="/assets/h2-2.svg"
-          />
-        </Flex>
+
+        <Image maxW="2rem" opacity={0.5} alt="section" src="/assets/h2-2.svg" />
       </Flex>
       <Flex
         maxW={{ base: "18rem", md: "30rem", lg: "35rem", xl: "45rem" }}
         minH="29rem"
         borderRadius="20"
         direction="column"
-        // /gap={{ base: "4", md: "6" }}
       >
         <Image
-          opacity={0.25}
-          maxW={{ base: "1.4rem", md: "2rem" }}
+          opacity={0.5}
+          maxW={{ base: "1rem", md: "1.6rem" }}
           alt="section"
           src="/assets/p-1.svg"
         />
@@ -58,7 +51,8 @@ const Subhero = () => {
           fontWeight="semibold"
           letterSpacing={1}
           color="gray.100"
-          p={{ base: "1.5rem", md: "2rem" }}
+          px={{ base: "1.5rem", md: "1.5rem" }}
+          py="0.5rem"
         >
           um tanto quanto gay, mas apaixonado pela viadagem, buscando sempre
           nossos meios de exercer essa profissao tao maravilhosa. Sou graduado
@@ -66,14 +60,13 @@ const Subhero = () => {
           faculdade, sou otimo em me comunicar com bichas, e tenho ansia pra
           aprender mais sobre as lgtbs
         </Text>
-        <Flex justify="flex-end">
-          <Image
-            maxW={{ base: "1.4rem", md: "2rem" }}
-            alt="section"
-            opacity={0.25}
-            src="/assets/p-2.svg"
-          />
-        </Flex>
+
+        <Image
+          maxW={{ base: "1.4rem", md: "2rem" }}
+          alt="section"
+          opacity={0.5}
+          src="/assets/p-2.svg"
+        />
       </Flex>
     </Flex>
   );

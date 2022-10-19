@@ -17,10 +17,10 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
     >
       <Flex direction="column">
         <Image
-          maxW="2rem"
+          maxW="1.6rem"
           alt="section"
           src="/assets/h2-1.svg"
-          opacity={0.25}
+          opacity={0.5}
         />
         <Text
           color="#65CCA9"
@@ -34,23 +34,19 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         >
           Meus Projetos
         </Text>
-        <Flex justify="flex-end">
-          <Image
-            maxW="2rem"
-            alt="section"
-            src="/assets/h2-1.svg"
-            opacity={0.25}
-          />
-        </Flex>
+
+        <Image maxW="2rem" alt="section" src="/assets/h2-2.svg" opacity={0.5} />
       </Flex>
 
       <Flex direction="column" w="100%" gap="6">
         <Image
+          position="relative"
+          right={{ base: "2", md: "6" }}
           w={{ base: "3rem", md: "5rem" }}
-          opacity={0.25}
+          opacity={0.5}
           alt="section"
           src="/assets/section1.svg"
-        ></Image>
+        />
 
         <Container
           border="2px"
@@ -72,14 +68,13 @@ const Projects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             />
           ))}
         </Container>
-        <Flex justify="flex-end">
-          <Image
-            w={{ base: "3rem", md: "5rem" }}
-            opacity={0.25}
-            alt="section"
-            src="/assets/section2.svg"
-          ></Image>
-        </Flex>
+
+        <Image
+          w={{ base: "3rem", md: "5rem" }}
+          opacity={0.5}
+          alt="section"
+          src="/assets/section2.svg"
+        />
       </Flex>
     </Flex>
   );

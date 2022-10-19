@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <Flex
       align="center"
-      px="6"
+      px={{ base: "2", md: "6" }}
       bgColor="black"
       minH="5vh"
       w="100%"

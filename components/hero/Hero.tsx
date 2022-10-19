@@ -4,14 +4,25 @@ import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 import { BsArrowDownCircle } from "react-icons/bs";
 const Hero = () => {
   return (
-    <Flex
-      minH="100vh"
-      h="100vh"
-      minW="100vw"
-      w="100vw"
-      //bgColor="#192211"
-      bgColor="#1d1d1d"
-    >
+    <Flex minH="100vh" h="100vh" minW="100vw" w="100vw" bgColor="#1d1d1d">
+      <Image
+        src="/assets/html-1.svg"
+        boxSize="2.4rem"
+        position="absolute"
+        opacity={0.4}
+        alt="html"
+        top={{ base: "40px", md: "50px", lg: "50px" }}
+        left="30px"
+      />
+      <Image
+        src="/assets/body-1.svg"
+        boxSize="2.4rem"
+        position="absolute"
+        alt="html"
+        top={{ base: "60px", md: "75px", lg: "75px" }}
+        opacity={0.4}
+        left="55px"
+      />
       <Flex align="flex-end" maxH="100vh" py="12">
         <Image
           right="12px"
@@ -33,31 +44,37 @@ const Hero = () => {
       >
         <GridItem
           as={Flex}
-          mt={{ base: "3.5rem", md: "0" }}
+          mt={{ base: "5.5rem", md: "0" }}
           direction="column"
           pl={{ base: "2rem", md: "6rem", lg: "8rem", xl: "10rem" }}
           pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
           gap="7rem"
+          align="center"
           justify="center"
           w={{ base: "100vw", md: "100%" }}
         >
-          <Flex direction="column" align="center">
+          <Flex direction="column">
+            <Image alt="asd" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
+
             <Text
+              px="4"
               fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
               color="#65CCA9"
               fontWeight="bold"
               letterSpacing={2}
             >
-              Vitor Dias
+              Olá! Sou o Vitor Dias
             </Text>
             <Text
               fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
               color="white"
               fontWeight="bold"
               letterSpacing={2}
+              px="4"
             >
-              Dev frontend
+              Desenvolvedor frontend
             </Text>
+            <Image alt="asd" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
           </Flex>
           <Flex
             direction="column"
