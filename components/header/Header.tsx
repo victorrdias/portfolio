@@ -1,5 +1,6 @@
 import { Button, Flex, Text } from "@chakra-ui/react";
 import React from "react";
+import MobileNav from "./MobileNav";
 import WebNav from "./WebNav";
 
 const Header = () => {
@@ -19,6 +20,7 @@ const Header = () => {
         vituxodev caraio
       </Text>
       <WebNav />
+      <MobileNav />
     </Flex>
   );
 };

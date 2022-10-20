@@ -3,7 +3,7 @@ import React from "react";
 
 const WebNav = () => {
   return (
-    <Flex gap={{ base: "0", md: "6" }}>
+    <Flex gap={{ base: "0", md: "6" }} display={{ base: "none", md: "flex" }}>
       <Button
         variant="invisible"
         color="white"
