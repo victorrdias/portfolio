@@ -40,8 +40,8 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
           p="1rem"
           fontSize={{ base: "12", md: "16", lg: "18" }}
           lineHeight="30px"
-          fontWeight="semibold"
-          letterSpacing={1}
+          fontWeight="normal"
+          letterSpacing={2}
           color="white"
           boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         >

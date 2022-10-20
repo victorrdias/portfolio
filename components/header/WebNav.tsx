@@ -13,6 +13,8 @@ const WebNav = () => {
         _hover={{
           color: "#65CCA9",
         }}
+        fontWeight="normal"
+        letterSpacing={1.5}
       >
         Sobre
       </Button>
@@ -25,6 +27,8 @@ const WebNav = () => {
         _hover={{
           color: "#65CCA9",
         }}
+        fontWeight="normal"
+        letterSpacing={1.5}
       >
         Habilidades
       </Button>
@@ -37,6 +41,8 @@ const WebNav = () => {
         _hover={{
           color: "#65CCA9",
         }}
+        fontWeight="normal"
+        letterSpacing={1.5}
       >
         Projetos
       </Button>
@@ -49,6 +55,8 @@ const WebNav = () => {
         _hover={{
           color: "#65CCA9",
         }}
+        fontWeight="normal"
+        letterSpacing={1.5}
       >
         PT/BR
       </Button>

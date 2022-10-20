@@ -77,6 +77,8 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             _hover={{
               bgColor: "#333333",
             }}
+            fontWeight="normal"
+            letterSpacing={1.5}
           >
             Va para o GitHub
           </Button>

@@ -22,8 +22,8 @@ const Footer = () => {
         align="center"
         fontSize={{ base: "8", md: "10", lg: "10" }}
         lineHeight="30px"
-        fontWeight="semibold"
-        letterSpacing={1}
+        fontWeight="normal"
+        letterSpacing={1.5}
         color="white"
       >
         venha me conhecer miga, sua louca, vamos dar mtos beijos na boca e
@@ -33,8 +33,8 @@ const Footer = () => {
         w="max-content"
         fontSize={{ base: "8", md: "10", lg: "10" }}
         lineHeight="30px"
-        fontWeight="semibold"
-        letterSpacing={1}
+        fontWeight="normal"
+        letterSpacing={1.5}
         color="white"
       >
         Desenvolvido com React, TypeScript e NextJs

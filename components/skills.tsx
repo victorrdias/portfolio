@@ -48,8 +48,8 @@ const Skills = () => {
         <Text
           fontSize={{ base: "12", md: "20", lg: "25" }}
           lineHeight="34px"
-          fontWeight="semibold"
-          letterSpacing={1}
+          fontWeight="normal"
+          letterSpacing={2}
           color="gray.100"
           px={{ base: "1.4rem", md: "1.5rem" }}
         >

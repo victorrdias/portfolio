@@ -939,6 +939,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/kelly-slab@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/kelly-slab/-/kelly-slab-4.5.9.tgz#a8ef3ca40e507f50a5d29527495c9f3d0ed3aa40"
+  integrity sha512-lL6roibdkE4icAFsFcKjediVRTiWylNDoGF3V17AT0L3NZQGy42nymMXqjlSNlT+DzNMGkAwczyIyrVXX6Rdqg==
+
 "@humanwhocodes/config-array@^0.10.5":
   version "0.10.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.10.7.tgz#6d53769fd0c222767e6452e8ebda825c22e9f0dc"

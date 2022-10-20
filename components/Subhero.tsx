@@ -7,7 +7,7 @@ const Subhero = () => {
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
-      h={{ base: "100vh", lg: "80vh" }}
+      h={{ base: "100vh", md: "60vh", lg: "80vh" }}
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
@@ -48,8 +48,8 @@ const Subhero = () => {
         <Text
           fontSize={{ base: "12", md: "20", lg: "25" }}
           lineHeight="34px"
-          fontWeight="semibold"
-          letterSpacing={1}
+          fontWeight="normal"
+          letterSpacing={2}
           color="gray.100"
           px={{ base: "1.5rem", md: "1.5rem" }}
           py="0.5rem"
