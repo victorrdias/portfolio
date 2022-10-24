@@ -7,7 +7,7 @@ const Subhero = () => {
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
-      h={{ base: "100vh", md: "75vh", lg: "90vh" }}
+      h={{ base: "90vh", md: "100vh", lg: "85vh" }}
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
@@ -45,24 +45,49 @@ const Subhero = () => {
           alt="section"
           src="/assets/p-1.svg"
         />
-        <Text
-          fontSize={{ base: "12", md: "20", lg: "25" }}
-          lineHeight="34px"
-          fontWeight="normal"
-          letterSpacing={2}
-          color="gray.100"
-          px={{ base: "1.5rem", md: "1.5rem" }}
-          py="0.5rem"
-        >
-          Sou historiador de formacao pela Universidade Estadual de Sao Paulo,
-          multi-instrumentista e fui musico profissional por muitos anos! Tenho
-          desejo por aprender e sempre gostei dos estudos no que se refere a
-          historia, e como a uniao com a tecnologia benefia seus estudos.
-          Entrentanto apos formado decidi transicionar de carreira para a
-          programacao, com a ajuda dos meus amigos programadores, comecei a me
-          aprofundar nessa area e me apaixonei.
-        </Text>
-
+        <Flex direction="column" gap={{ base: "0", md: "1rem" }}>
+          <Text
+            fontSize={{ base: "12", md: "20", lg: "20" }}
+            lineHeight={{ base: "28px", md: "34px" }}
+            fontWeight="normal"
+            letterSpacing={2}
+            color="gray.100"
+            px={{ base: "1.5rem", md: "1.5rem" }}
+            py="0.5rem"
+          >
+            Sou desenvolvedor front-end, morando no interior de Sao Paulo,
+            historiador de formação pela Universidade Estadual de São Paulo,
+            multi-instrumentista e fui musico profissional por muitos anos,
+            portanto, criatividade e meu forte!
+          </Text>
+          <Text
+            fontSize={{ base: "12", md: "20", lg: "20" }}
+            lineHeight={{ base: "28px", md: "34px" }}
+            fontWeight="normal"
+            letterSpacing={2}
+            color="gray.100"
+            px={{ base: "1.5rem", md: "1.5rem" }}
+            py="0.5rem"
+          >
+            Tenho desejo por aprender e sempre gostei dos estudos no que se
+            refere à história, e como a união com a tecnologia beneficia seus
+            estudos.
+          </Text>
+          <Text
+            fontSize={{ base: "12", md: "20", lg: "20" }}
+            lineHeight={{ base: "28px", md: "34px" }}
+            fontWeight="normal"
+            letterSpacing={2}
+            color="gray.100"
+            px={{ base: "1.5rem", md: "1.5rem" }}
+            py="0.5rem"
+          >
+            Apos formado decidi transicionar de carreira para à programação, com
+            a ajuda dos meus amigos programadores, comecei a me aprofundar nessa
+            área e me apaixonei pelo design de interfaces e desenvolver projetos
+            desafiantes que possam contribuir para as pessoas!
+          </Text>
+        </Flex>
         <Image
           maxW={{ base: "1.4rem", md: "2rem" }}
           alt="section"
