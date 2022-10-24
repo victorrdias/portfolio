@@ -7,7 +7,7 @@ const Subhero = () => {
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
-      h={{ base: "100vh", md: "60vh", lg: "80vh" }}
+      h={{ base: "100vh", md: "75vh", lg: "90vh" }}
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
@@ -54,11 +54,13 @@ const Subhero = () => {
           px={{ base: "1.5rem", md: "1.5rem" }}
           py="0.5rem"
         >
-          um tanto quanto gay, mas apaixonado pela viadagem, buscando sempre
-          nossos meios de exercer essa profissao tao maravilhosa. Sou graduado
-          em boiolice, mas transicionei de carreira assim que terminei a
-          faculdade, sou otimo em me comunicar com bichas, e tenho ansia pra
-          aprender mais sobre as lgtbs
+          Sou historiador de formacao pela Universidade Estadual de Sao Paulo,
+          multi-instrumentista e fui musico profissional por muitos anos! Tenho
+          desejo por aprender e sempre gostei dos estudos no que se refere a
+          historia, e como a uniao com a tecnologia benefia seus estudos.
+          Entrentanto apos formado decidi transicionar de carreira para a
+          programacao, com a ajuda dos meus amigos programadores, comecei a me
+          aprofundar nessa area e me apaixonei.
         </Text>
 
         <Image

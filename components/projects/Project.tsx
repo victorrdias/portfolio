@@ -1,10 +1,21 @@
-import { Flex, Button, Text, Image, Link } from "@chakra-ui/react";
-//import Link from "next/link";
+import {
+  Flex,
+  Button,
+  Text,
+  Image,
+  Link,
+  Fade,
+  SlideFade,
+  ScaleFade,
+  Slide,
+  useDisclosure,
+} from "@chakra-ui/react";
 import React from "react";
-import { TiSocialSkype } from "react-icons/ti";
 import { ProjectProps } from "../../utils/interface/ProjectProps";
 
 const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
+  const { isOpen, onOpen, onToggle } = useDisclosure();
+
   return (
     <Flex
       gap={{ base: "2", md: "5" }}

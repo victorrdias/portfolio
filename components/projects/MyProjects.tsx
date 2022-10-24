@@ -7,7 +7,7 @@ import Project from "./Project";
 const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
-      minW="100vw"
+      maxW="100vw"
       minH={{ base: "70vh", md: "80vh", lg: "120vh" }}
       bgColor="#1d1d1d"
       direction="column"

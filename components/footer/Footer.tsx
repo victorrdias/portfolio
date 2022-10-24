@@ -14,7 +14,7 @@ const Footer = () => {
       align="center"
       direction="column"
       gap="12"
-      w="100vw"
+      maxW="100vw"
     >
       <Text
         w="100%"

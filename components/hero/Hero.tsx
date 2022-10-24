@@ -4,7 +4,7 @@ import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 import { BsArrowDownCircle } from "react-icons/bs";
 const Hero = () => {
   return (
-    <Flex minH="100vh" h="100vh" minW="100vw" w="100vw" bgColor="#1d1d1d">
+    <Flex minH="100vh" h="100vh" maxW="100vw" bgColor="#1d1d1d">
       <Image
         src="/assets/html-1.svg"
         boxSize="2.4rem"
@@ -35,7 +35,7 @@ const Hero = () => {
           position="absolute"
           src="/assets/downpng.png"
           alt="scrolldownleft"
-          w={{ base: "36px", md: "48px", lg: "max-content" }}
+          w={{ base: "36px", md: "48px", lg: "56px" }}
         />
       </Flex>
       <Grid
