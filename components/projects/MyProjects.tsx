@@ -8,12 +8,13 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
       maxW="100vw"
-      minH={{ base: "70vh", md: "80vh", lg: "120vh" }}
+      minH="max-content"
       bgColor="#1d1d1d"
       direction="column"
       px={{ base: "1rem", md: "", lg: "8rem" }}
       gap="4rem"
       pb={{ md: "6rem", lg: "8rem" }}
+      py="4rem"
     >
       <Flex direction="column" align="flex-start">
         <Image

@@ -7,7 +7,7 @@ const Subhero = () => {
     <Flex
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
-      h={{ base: "90vh", md: "100vh", lg: "85vh" }}
+      h="max-content"
       bgColor="#1d1d1d"
       align="flex-start"
       direction="column"
@@ -34,7 +34,7 @@ const Subhero = () => {
         <Image maxW="2rem" opacity={0.5} alt="section" src="/assets/h2-2.svg" />
       </Flex>
       <Flex
-        maxW={{ base: "18rem", md: "30rem", lg: "35rem", xl: "45rem" }}
+        maxW={{ base: "30rem", md: "30rem", lg: "35rem", xl: "45rem" }}
         minH="29rem"
         borderRadius="20"
         direction="column"
