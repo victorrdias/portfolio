@@ -34,7 +34,12 @@ const Subhero = () => {
         <Image maxW="2rem" opacity={0.5} alt="section" src="/assets/h2-2.svg" />
       </Flex>
       <Flex
-        maxW={{ base: "30rem", md: "30rem", lg: "35rem", xl: "45rem" }}
+        maxW={{
+          base: "max-content",
+          md: "max-content",
+          lg: "35rem",
+          xl: "45rem",
+        }}
         minH="29rem"
         borderRadius="20"
         direction="column"

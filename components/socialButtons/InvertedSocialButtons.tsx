@@ -9,7 +9,8 @@ const InvertedSocialButtons = () => {
     <Flex gap="6" alignItems="center">
       <Link href="https://github.com/victorrdias" isExternal>
         <IconButton
-          color="#090909"
+          color="#65CCA9"
+          bgColor="#1d1d1d"
           fontSize="60px"
           aria-label="github"
           icon={<AiFillGithub />}
@@ -19,8 +20,8 @@ const InvertedSocialButtons = () => {
             lg: "3rem",
             xl: "3rem",
           }}
-          borderRadius="50"
-          borderColor="#090909"
+          //borderRadius="50"
+          borderColor="#65CCA9"
           border="2px"
           _hover={{
             color: "white",
@@ -44,8 +45,8 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             lg: "3rem",
             xl: "3rem",
           }}
-          borderRadius="50"
-          color="#090909"
+          color="#65CCA9"
+          bgColor="#1d1d1d"
           fontSize="45px"
           borderColor="#090909"
           border="2px"
@@ -69,8 +70,8 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
             lg: "3rem",
             xl: "3rem",
           }}
-          borderRadius="50"
-          color="#090909"
+          color="#65CCA9"
+          bgColor="#1d1d1d"
           fontSize="60px"
           borderColor="#090909"
           border="2px"

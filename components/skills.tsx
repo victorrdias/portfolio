@@ -89,7 +89,7 @@ const Skills = () => {
         </Flex>
       </Flex>
 
-      <Box py="6.5rem" w="100%" h="100%">
+      <Box py={{ base: "3rem", md: "6.5rem" }} w="100%" h="100%">
         <Stack gap="4" px="5">
           <Text
             color="white"
@@ -100,7 +100,7 @@ const Skills = () => {
           >
             ReactJS
           </Text>
-          <Progress size="xs" colorScheme="red" value={65}></Progress>
+          <Progress size="xs" colorScheme="green" value={65}></Progress>
           <Text
             color="white"
             fontWeight="normal"
@@ -110,7 +110,7 @@ const Skills = () => {
           >
             Front-end
           </Text>
-          <Progress size="xs" colorScheme="red" value={80}></Progress>
+          <Progress size="xs" colorScheme="purple" value={80}></Progress>
           <Text
             color="white"
             fontWeight="normal"
@@ -130,7 +130,7 @@ const Skills = () => {
           >
             Chakra-UI
           </Text>
-          <Progress size="xs" colorScheme="red" value={92}></Progress>
+          <Progress size="xs" colorScheme="green" value={92}></Progress>
         </Stack>
       </Box>
     </Flex>
