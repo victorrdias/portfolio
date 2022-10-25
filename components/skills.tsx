@@ -13,6 +13,7 @@ import React from "react";
 const Skills = () => {
   return (
     <Flex
+      as="section"
       pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
       pr={{ base: "1.5rem", md: "3rem" }}
       py={{ base: "0", md: "4rem" }}
@@ -21,8 +22,8 @@ const Skills = () => {
       direction={{ base: "column", md: "column", lg: "row" }}
       gap={{ base: "0", lg: "3rem" }}
     >
-      <Flex direction="column" gap="1rem">
-        <Flex direction="column" gap="1">
+      <Flex as="article" direction="column" gap="1rem">
+        <Flex as="h2" direction="column" gap="1">
           <Image
             maxW="1.6rem"
             alt="section"
@@ -48,6 +49,7 @@ const Skills = () => {
           />
         </Flex>
         <Flex
+          as="aside"
           maxW={{ base: "", md: "", lg: "35rem", xl: "40rem" }}
           minW={{ base: "", md: "", lg: "35rem", xl: "40rem" }}
           borderRadius="20"
@@ -89,8 +91,8 @@ const Skills = () => {
         </Flex>
       </Flex>
 
-      <Box py={{ base: "3rem", md: "6.5rem" }} w="100%" h="100%">
-        <Stack gap="4" px="5">
+      <Box as="article" py={{ base: "3rem", md: "6.5rem" }} w="100%" h="100%">
+        <Stack gap="4" px="5" as="aside">
           <Text
             color="white"
             fontWeight="normal"
