@@ -6,6 +6,7 @@ import WebNav from "./WebNav";
 const Header = () => {
   return (
     <Flex
+      as="header"
       align="center"
       px={{ base: "2", md: "6" }}
       bgColor="black"

@@ -1,10 +1,11 @@
 import { Container, Flex, Text, Image } from "@chakra-ui/react";
-import React from "react";
+import React, { useRef } from "react";
 import SocialButtons from "./socialButtons/SocialButtons";
 
 const Subhero = () => {
   return (
     <Flex
+      as="section"
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"
       h="max-content"

@@ -6,7 +6,7 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 
 const InvertedSocialButtons = () => {
   return (
-    <Flex gap="6" alignItems="center">
+    <Flex gap="6" alignItems="center" as="button">
       <Link href="https://github.com/victorrdias" isExternal>
         <IconButton
           color="#65CCA9"
