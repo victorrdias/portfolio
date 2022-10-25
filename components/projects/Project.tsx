@@ -18,6 +18,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
 
   return (
     <Flex
+      as="article"
       gap={{ base: "2", md: "5" }}
       direction={{ base: "column", md: "row" }}
     >

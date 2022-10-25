@@ -8,6 +8,7 @@ import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 const Footer = () => {
   return (
     <Flex
+      as="footer"
       minH="30vh"
       bgColor="#1d1d1d"
       py="4"
@@ -17,6 +18,7 @@ const Footer = () => {
       maxW="100vw"
     >
       <Text
+        as="h2"
         w="100%"
         px="3rem"
         align="center"
@@ -30,6 +32,7 @@ const Footer = () => {
         fazermos muitas sapecagens!!!!! ao ar livre e muitas traquinagens!
       </Text>
       <Text
+        as="h3"
         w="max-content"
         fontSize={{ base: "8", md: "10", lg: "10" }}
         lineHeight="30px"

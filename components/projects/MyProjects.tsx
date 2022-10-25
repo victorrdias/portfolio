@@ -7,6 +7,7 @@ import Project from "./Project";
 const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   return (
     <Flex
+      as="section"
       maxW="100vw"
       minH="max-content"
       bgColor="#1d1d1d"
@@ -16,7 +17,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       pb={{ md: "6rem", lg: "8rem" }}
       py="4rem"
     >
-      <Flex direction="column" align="flex-start">
+      <Flex as="h2" direction="column" align="flex-start">
         <Image
           maxW="1.6rem"
           alt="section"
@@ -38,7 +39,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
 
         <Image maxW="2rem" alt="section" src="/assets/h2-2.svg" opacity={0.5} />
       </Flex>
-      <Flex direction="column" gap="1rem">
+      <Flex as="section" direction="column" gap="1rem">
         <Image
           position="relative"
           right={{ base: "2", md: "1", lg: "6" }}
@@ -65,7 +66,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         />
       </Flex>
 
-      <Flex w="100%" justify="center">
+      <Flex w="100%" justify="center" as="article">
         <Link href="https://github.com/victorrdias" isExternal>
           <Button
             borderRadius="block"
