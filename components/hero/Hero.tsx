@@ -1,6 +1,9 @@
 import React from "react";
 import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
-import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
+import dynamic from "next/dynamic";
+const InvertedSocialButtons = dynamic(
+  () => import("../socialButtons/InvertedSocialButtons")
+);
 
 const Hero = () => {
   return (

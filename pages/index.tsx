@@ -1,11 +1,12 @@
 import React from "react";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
-import Hero from "../components/hero/Hero";
-import MyProjects from "../components/projects/MyProjects";
-import ScrollToTop from "../components/scrollToTop";
-import Skills from "../components/skills";
-import Subhero from "../components/Subhero";
+import dynamic from "next/dynamic";
+const Hero = dynamic(() => import("../components/hero/Hero"));
+const Header = dynamic(() => import("../components/header/Header"));
+const Footer = dynamic(() => import("../components/footer/Footer"));
+const MyProjects = dynamic(() => import("../components/projects/MyProjects"));
+const ScrollToTop = dynamic(() => import("../components/scrollToTop"));
+const Skills = dynamic(() => import("../components/skills"));
+const Subhero = dynamic(() => import("../components/Subhero"));
 import Main from "../layout/Main";
 import { projectContent } from "../utils/contentData/ProjectContent";
 

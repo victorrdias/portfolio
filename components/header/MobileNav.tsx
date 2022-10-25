@@ -1,4 +1,4 @@
-import { Button, Flex, IconButton } from "@chakra-ui/react";
+import { Button, Flex } from "@chakra-ui/react";
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 

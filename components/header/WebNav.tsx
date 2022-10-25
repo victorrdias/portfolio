@@ -1,18 +1,10 @@
+import React from "react";
 import { Flex, Button } from "@chakra-ui/react";
-import React, { useRef } from "react";
 
 const WebNav = () => {
-  const Sobre = useRef();
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
   return (
     <Flex gap={{ base: "0", md: "6" }} display={{ base: "none", md: "flex" }}>
       <Button
-        onClick={() => scrollToSection(Sobre)}
         variant="invisible"
         color="white"
         borderRadius="10"

@@ -1,6 +1,5 @@
-import { Container, Flex, Text, Image } from "@chakra-ui/react";
-import React, { useRef } from "react";
-import SocialButtons from "./socialButtons/SocialButtons";
+import React from "react";
+import { Flex, Text, Image } from "@chakra-ui/react";
 
 const Subhero = () => {
   return (
@@ -14,7 +13,7 @@ const Subhero = () => {
       direction="column"
       gap="1rem"
     >
-      <Flex direction="column" gap="2">
+      <Flex direction="column" gap="2" as="h2">
         <Image
           maxW="1.6rem"
           alt="section"
@@ -35,6 +34,7 @@ const Subhero = () => {
         <Image maxW="2rem" opacity={0.5} alt="section" src="/assets/h2-2.svg" />
       </Flex>
       <Flex
+        as="aside"
         maxW={{
           base: "max-content",
           md: "max-content",
@@ -51,7 +51,7 @@ const Subhero = () => {
           alt="section"
           src="/assets/p-1.svg"
         />
-        <Flex direction="column" gap={{ base: "0", md: "1rem" }}>
+        <Flex direction="column" gap={{ base: "0", md: "1rem" }} as="section">
           <Text
             fontSize={{ base: "12", md: "20", lg: "20" }}
             lineHeight={{ base: "28px", md: "34px" }}
