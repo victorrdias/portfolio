@@ -12,7 +12,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       minH="max-content"
       bgColor="#1d1d1d"
       direction="column"
-      px={{ base: "1rem", md: "", lg: "8rem" }}
+      px={{ base: "1rem", md: "", lg: "2rem" }}
       gap="4rem"
       pb={{ md: "6rem", lg: "8rem" }}
       py="4rem"
@@ -48,14 +48,16 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           alt="section"
           src="/assets/section1.svg"
         />
-        {projectContent.map((project) => (
-          <Project
-            key={project.description}
-            link={project.link}
-            image={project.image}
-            description={project.description}
-          />
-        ))}
+        <Flex direction="column" gap="4rem">
+          {projectContent.map((project) => (
+            <Project
+              key={project.description}
+              link={project.link}
+              image={project.image}
+              description={project.description}
+            />
+          ))}
+        </Flex>
         <Image
           position="relative"
           right={{ base: "2", md: "1", lg: "6" }}

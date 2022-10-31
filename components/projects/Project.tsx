@@ -39,23 +39,20 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             minW="100%"
             alt="project-image"
             h="100%"
-            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
           />
         </Button>
       </Link>
       <Flex px={{ base: "1rem", md: "" }}>
         <Text
-          bgColor="#333333"
+          h="100%"
           minW="40vw"
+          maxW={{ base: "", md: "40vw" }}
           w="100%"
-          textAlign="center"
-          p="1rem"
-          fontSize={{ base: "12", md: "16", lg: "18" }}
+          fontSize={{ base: "12", md: "12", lg: "16" }}
           lineHeight="30px"
           fontWeight="normal"
           letterSpacing={2}
           color="white"
-          boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
         >
           {description}
         </Text>

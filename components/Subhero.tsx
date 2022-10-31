@@ -34,6 +34,7 @@ const Subhero = () => {
         <Image maxW="2rem" opacity={0.5} alt="section" src="/assets/h2-2.svg" />
       </Flex>
       <Flex
+        gap="2"
         as="aside"
         maxW={{
           base: "max-content",

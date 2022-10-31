@@ -16,9 +16,9 @@ const InvertedSocialButtons = () => {
           icon={<AiFillGithub />}
           boxSize={{
             base: "2.5rem",
-            md: "3rem",
-            lg: "3rem",
-            xl: "3rem",
+            md: "2.5rem",
+            lg: "2.5rem",
+            xl: "2.5rem",
           }}
           //borderRadius="50"
           borderColor="#65CCA9"
@@ -41,9 +41,9 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
           icon={<AiOutlineWhatsApp />}
           boxSize={{
             base: "2.5rem",
-            md: "3rem",
-            lg: "3rem",
-            xl: "3rem",
+            md: "2.5rem",
+            lg: "2.5rem",
+            xl: "2.5rem",
           }}
           color="#65CCA9"
           bgColor="#1d1d1d"
@@ -66,9 +66,9 @@ https://wa.me/+5517991585836?text=Ol%C3%A1!%20Eu%20sou%20o%20Vitor,%20muito%20pr
           icon={<TiSocialLinkedinCircular />}
           boxSize={{
             base: "2.5rem",
-            md: "3rem",
-            lg: "3rem",
-            xl: "3rem",
+            md: "2.5rem",
+            lg: "2.5rem",
+            xl: "2.5rem",
           }}
           color="#65CCA9"
           bgColor="#1d1d1d"

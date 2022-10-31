@@ -54,7 +54,6 @@ const Skills = () => {
           minW={{ base: "", md: "", lg: "35rem", xl: "40rem" }}
           borderRadius="20"
           direction="column"
-          gap="2"
         >
           <Image
             opacity={0.5}
@@ -62,26 +61,50 @@ const Skills = () => {
             alt="section"
             src="/assets/p-1.svg"
           />
-          <Text
-            fontSize={{ base: "12", md: "20", lg: "20" }}
-            lineHeight={{ base: "28px", md: "34px" }}
-            fontWeight="normal"
-            letterSpacing={2}
-            color="gray.100"
-            px={{ base: "1.4rem", md: "1.5rem" }}
+          <Flex
+            direction="column"
+            gap={{ base: "1rem", md: "1rem" }}
+            as="section"
           >
-            Conhecido como mago do css e do chakra UI, desenvolvo com a
-            biblioteca JavaScript React js, unido ao TypeScript, NextJS e
-            Firebase, sou profissional em fazer pagina bonitinha, e meter o
-            louco na rapazeada. Conhecimentos bem mais ou menos em javaScript
-            puro, e sei usar API e trabalhar com contextos.nal em fazer pagina
-            bonitinha, e meter o louco na rapazeada. Conhecimentos bem mais ou
-            menos em javaScript puro, e sei usar API e trabalhar com
-            contextos.nal em fazer pagina bonitinha, e meter o louco na
-            rapazeada. Conhecimentos bem mais ou menos em javaScript puro, e sei
-            usar API e trabalhar com contextos.
-          </Text>
-
+            <Text
+              fontSize={{ base: "12", md: "20", lg: "20" }}
+              lineHeight={{ base: "28px", md: "34px" }}
+              fontWeight="normal"
+              letterSpacing={2}
+              color="gray.100"
+              px={{ base: "1.4rem", md: "1.5rem" }}
+            >
+              Possuo conhecimento solido em HTML, JavaScript e CSS, atuo
+              desenvolvendo interfaces totalmente responsivas, utilizando o
+              princípio do Mobile First, com a biblioteca ReactJS. Também faço
+              uso do Framework NextJS e a plataforma NodeJS, unidos ao
+              Typescript.
+            </Text>
+            <Text
+              fontSize={{ base: "12", md: "20", lg: "20" }}
+              lineHeight={{ base: "28px", md: "34px" }}
+              fontWeight="normal"
+              letterSpacing={2}
+              color="gray.100"
+              px={{ base: "1.4rem", md: "1.5rem" }}
+            >
+              Atualmente desenvolvo com a biblioteca CSS ChakraUI, possuindo
+              também experiencia em TailWindCSS, além de possuir conhecimentos
+              consistentes em consumo de API e Firebase.
+            </Text>
+            <Text
+              fontSize={{ base: "12", md: "20", lg: "20" }}
+              lineHeight={{ base: "28px", md: "34px" }}
+              fontWeight="normal"
+              letterSpacing={2}
+              color="gray.100"
+              px={{ base: "1.4rem", md: "1.5rem" }}
+            >
+              Desde o início da minha jornada na programação mantenho o foco em
+              aplicar boas práticas, seguindo padrões já consagrados como o
+              CleanCode.
+            </Text>
+          </Flex>
           <Image
             maxW={{ base: "1.4rem", md: "2rem" }}
             alt="section"
