@@ -6,6 +6,8 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 
 const Footer = () => {
+  const currentDate = Date.now();
+  const currentYear = new Date(currentDate).getFullYear();
   return (
     <Flex
       as="footer"
@@ -14,41 +16,69 @@ const Footer = () => {
       py="4"
       align="center"
       direction="column"
-      gap="12"
+      gap="8"
       maxW="100vw"
     >
+      <Flex direction="column">
+        <Text
+          as="h2"
+          w="100%"
+          px="3rem"
+          align="center"
+          fontSize={{ base: "8", md: "10", lg: "10" }}
+          lineHeight="30px"
+          fontWeight="normal"
+          letterSpacing={1.5}
+          color="white"
+        >
+          Entre em contato comigo!
+        </Text>
+        <Text
+          as="h3"
+          w="100%"
+          px="3rem"
+          align="center"
+          fontSize={{ base: "8", md: "10", lg: "10" }}
+          lineHeight="30px"
+          fontWeight="normal"
+          letterSpacing={1.5}
+          color="white"
+        >
+          Email: vitor.sousa.dias.15@gmail.com
+        </Text>
+      </Flex>
+
+      <InvertedSocialButtons />
+
       <Text
-        as="h2"
-        w="100%"
-        px="3rem"
-        align="center"
-        fontSize={{ base: "8", md: "10", lg: "10" }}
-        lineHeight="30px"
-        fontWeight="normal"
-        letterSpacing={1.5}
-        color="white"
-      >
-        venha me conhecer miga, sua louca, vamos dar mtos beijos na boca e
-        fazermos muitas sapecagens!!!!! ao ar livre e muitas traquinagens!
-      </Text>
-      <Text
-        as="h3"
+        as="h4"
         w="max-content"
         fontSize={{ base: "8", md: "10", lg: "10" }}
-        lineHeight="30px"
+        lineHeight="35px"
         fontWeight="normal"
         letterSpacing={1.5}
         color="white"
       >
         Desenvolvido com React, TypeScript e NextJs
       </Text>
-      <InvertedSocialButtons />
+
+      <Text
+        as="h4"
+        w="max-content"
+        fontSize={{ base: "8", md: "10", lg: "10" }}
+        lineHeight="35px"
+        fontWeight="normal"
+        letterSpacing={1.5}
+        color="white"
+      >
+        © {currentYear} Vitor Sousa Dias
+      </Text>
       <Image
         boxSize="2.4rem"
         position="absolute"
         opacity={0.5}
         alt="html"
-        bottom="60px"
+        bottom="20px"
         left="45px"
         src="/assets/body-2.svg"
       />
@@ -57,7 +87,7 @@ const Footer = () => {
         position="absolute"
         opacity={0.5}
         alt="html"
-        bottom="40px"
+        bottom="5px"
         left="30px"
         src="/assets/html-2.svg"
       />

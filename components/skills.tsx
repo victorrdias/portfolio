@@ -1,13 +1,4 @@
-import {
-  Container,
-  Flex,
-  Text,
-  Image,
-  Box,
-  Button,
-  Stack,
-  Progress,
-} from "@chakra-ui/react";
+import { Flex, Text, Image, Box, Stack, Progress } from "@chakra-ui/react";
 import React from "react";
 
 const Skills = () => {
@@ -32,7 +23,7 @@ const Skills = () => {
           />
           <Text
             px="5"
-            color="#65CCA9"
+            color="primaryColor"
             fontWeight="bold"
             fontSize={{ base: "30", md: "35", lg: "40" }}
             letterSpacing={3}
@@ -63,7 +54,7 @@ const Skills = () => {
           />
           <Flex
             direction="column"
-            gap={{ base: "1rem", md: "1rem" }}
+            gap={{ base: "1rem", md: "1.5rem" }}
             as="section"
           >
             <Text
@@ -125,7 +116,7 @@ const Skills = () => {
           >
             ReactJS
           </Text>
-          <Progress size="xs" colorScheme="green" value={65}></Progress>
+          <Progress size="xs" colorScheme="cyan" value={65}></Progress>
           <Text
             color="white"
             fontWeight="normal"
@@ -145,7 +136,7 @@ const Skills = () => {
           >
             Back-end
           </Text>
-          <Progress size="xs" colorScheme="red" value={40}></Progress>
+          <Progress size="xs" colorScheme="pink" value={40}></Progress>
           <Text
             color="white"
             fontWeight="normal"
@@ -155,7 +146,7 @@ const Skills = () => {
           >
             Chakra-UI
           </Text>
-          <Progress size="xs" colorScheme="green" value={92}></Progress>
+          <Progress size="xs" colorScheme="messenger" value={92}></Progress>
         </Stack>
       </Box>
     </Flex>

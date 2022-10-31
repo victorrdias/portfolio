@@ -22,7 +22,7 @@ const Subhero = () => {
         />
         <Text
           px="1.4rem"
-          color="#65CCA9"
+          color="primaryColor"
           fontWeight="bold"
           fontSize={{ base: "30", md: "35", lg: "40" }}
           letterSpacing={3}

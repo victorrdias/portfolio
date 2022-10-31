@@ -25,7 +25,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           opacity={0.5}
         />
         <Text
-          color="#65CCA9"
+          color="#54edba"
           textAlign="center"
           justifyContent="center"
           p={{ base: "0.5rem", md: "1rem" }}
@@ -77,9 +77,9 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             w="max-content"
             variant="invisible"
             h="4rem"
-            color="#65CCA9"
+            color="primaryColor"
             _hover={{
-              bgColor: "#333333",
+              color: "#11a271",
             }}
             fontWeight="normal"
             letterSpacing={1.5}

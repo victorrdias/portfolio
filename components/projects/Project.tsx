@@ -20,7 +20,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
     <Flex
       as="article"
       gap={{ base: "2", md: "5" }}
-      direction={{ base: "column", md: "row" }}
+      direction={{ base: "column", md: "column", lg: "row" }}
     >
       <Link href={link} isExternal>
         <Button
@@ -45,10 +45,10 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
       <Flex px={{ base: "1rem", md: "" }}>
         <Text
           h="100%"
-          minW="40vw"
+          minW={{ base: "100%", md: "100%", lg: "40vw" }}
           maxW={{ base: "", md: "40vw" }}
           w="100%"
-          fontSize={{ base: "12", md: "12", lg: "16" }}
+          fontSize={{ base: "12", md: "16", lg: "16" }}
           lineHeight="30px"
           fontWeight="normal"
           letterSpacing={2}

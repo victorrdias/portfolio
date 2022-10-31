@@ -63,7 +63,7 @@ const Hero = () => {
             <Text
               px="4"
               fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
-              color="#65CCA9"
+              color="primaryColor"
               fontWeight="bold"
               letterSpacing={2}
             >
