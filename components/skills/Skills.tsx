@@ -37,8 +37,9 @@ const Skills: React.FC = () => {
           delay={0.1}
           whileHover={{ scale: 1.025 }}
         >
-          <Flex as="h2" direction="column" gap="1" ref={ref}>
+          <Flex as="h2" direction="column" gap="1">
             <Image
+              ref={ref}
               maxW="1.6rem"
               alt="section"
               src="/assets/h2-1.svg"
@@ -70,7 +71,7 @@ const Skills: React.FC = () => {
           borderRadius="20"
           direction="column"
         >
-          <SlideFade delay={0.2} offsetY="10px" in={inViewport}>
+          <SlideFade delay={0.4} offsetY="10px" in={inViewport}>
             <Image
               opacity={0.5}
               maxW={{ base: "1rem", md: "1.4rem" }}
@@ -104,6 +105,7 @@ const Skills: React.FC = () => {
                 letterSpacing={2}
                 color="white"
                 px={{ base: "1.4rem", md: "1.5rem" }}
+                ref={ref}
               >
                 Atualmente desenvolvo com a biblioteca CSS ChakraUI, possuindo
                 também experiencia em TailWindCSS, além de possuir conhecimentos

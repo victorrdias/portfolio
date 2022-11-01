@@ -12,10 +12,10 @@ const ProgressBars: React.FC = () => {
   return (
     <>
       {" "}
-      <Stack gap="4" px="5" as="aside" ref={ref}>
+      <Stack gap="4" px="5" as="aside">
         <SlideFade
           offsetX="10px"
-          delay={0.4}
+          delay={0.8}
           in={inViewport}
           whileHover={{ scale: 1.025 }}
         >
@@ -25,6 +25,7 @@ const ProgressBars: React.FC = () => {
             fontSize={{ base: "15", md: "25", lg: "25" }}
             letterSpacing={1.5}
             lineHeight={{ base: "0,5", md: "1" }}
+            ref={ref}
           >
             ReactJS
           </Text>
@@ -32,7 +33,7 @@ const ProgressBars: React.FC = () => {
         </SlideFade>
         <SlideFade
           offsetX="10px"
-          delay={0.5}
+          delay={0.9}
           in={inViewport}
           whileHover={{ scale: 1.025 }}
         >
@@ -49,7 +50,7 @@ const ProgressBars: React.FC = () => {
         </SlideFade>
         <SlideFade
           offsetX="10px"
-          delay={0.6}
+          delay={1}
           in={inViewport}
           whileHover={{ scale: 1.025 }}
         >
@@ -66,7 +67,7 @@ const ProgressBars: React.FC = () => {
         </SlideFade>
         <SlideFade
           offsetX="10px"
-          delay={0.7}
+          delay={1.1}
           in={inViewport}
           whileHover={{ scale: 1.025 }}
         >

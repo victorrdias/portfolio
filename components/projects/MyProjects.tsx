@@ -16,7 +16,7 @@ import Project from "./Project";
 
 const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   const ref = useRef(null);
-  const { inViewport } = useInViewport(ref, { rootMargin: "0px" });
+  const { inViewport } = useInViewport(ref, { rootMargin: "-10px" });
   return (
     <Flex
       as="section"
@@ -27,9 +27,15 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       gap="4rem"
       pb={{ md: "6rem", lg: "8rem" }}
       py="4rem"
+      ref={ref}
     >
-      <SlideFade offsetY="10px" in={inViewport} whileHover={{ scale: 1.025 }}>
-        <Flex as="h2" direction="column" align="flex-start" ref={ref}>
+      <SlideFade
+        offsetY="10px"
+        delay={0.5}
+        in={inViewport}
+        whileHover={{ scale: 1.025 }}
+      >
+        <Flex as="h2" direction="column" align="flex-start ">
           <Image
             maxW="1.6rem"
             alt="section"
@@ -89,7 +95,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
 
       <Flex w="100%" justify="center" as="article" ref={ref}>
         <Link href="https://github.com/victorrdias" isExternal>
-          <ScaleFade in={inViewport} whileHover={{ scale: 1.05 }}>
+          <ScaleFade in={inViewport} delay={0.5} whileHover={{ scale: 1.05 }}>
             <Button
               borderRadius="block"
               border="1px"
