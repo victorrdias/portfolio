@@ -29,7 +29,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       py="4rem"
     >
       <SlideFade offsetY="10px" in={inViewport} whileHover={{ scale: 1.025 }}>
-        <Flex as="h2" direction="column" align="flex-start">
+        <Flex as="h2" direction="column" align="flex-start" ref={ref}>
           <Image
             maxW="1.6rem"
             alt="section"
@@ -37,7 +37,6 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             opacity={0.5}
           />
           <Text
-            ref={ref}
             color="#54edba"
             textAlign="center"
             justifyContent="center"
