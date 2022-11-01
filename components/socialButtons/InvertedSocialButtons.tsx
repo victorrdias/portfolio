@@ -4,7 +4,7 @@ import React from "react";
 import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 
-const InvertedSocialButtons = () => {
+const InvertedSocialButtons: React.FC = () => {
   return (
     <Flex gap="6" alignItems="center" as="aside">
       <Link href="https://github.com/victorrdias" isExternal>

@@ -1,7 +1,8 @@
-import React from "react";
-import { Flex, Text, Image } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import { Flex, Text, Image, ScaleFade } from "@chakra-ui/react";
+import { useInViewport } from "react-in-viewport";
 
-const Subhero = () => {
+const Subhero: React.FC = () => {
   return (
     <Flex
       as="section"
@@ -58,7 +59,7 @@ const Subhero = () => {
             lineHeight={{ base: "28px", md: "34px" }}
             fontWeight="normal"
             letterSpacing={2}
-            color="gray.100"
+            color="white"
             px={{ base: "1.5rem", md: "1.5rem" }}
             py="0.5rem"
           >
@@ -72,7 +73,7 @@ const Subhero = () => {
             lineHeight={{ base: "28px", md: "34px" }}
             fontWeight="normal"
             letterSpacing={2}
-            color="gray.100"
+            color="white"
             px={{ base: "1.5rem", md: "1.5rem" }}
             py="0.5rem"
           >
@@ -85,7 +86,7 @@ const Subhero = () => {
             lineHeight={{ base: "28px", md: "34px" }}
             fontWeight="normal"
             letterSpacing={2}
-            color="gray.100"
+            color="white"
             px={{ base: "1.5rem", md: "1.5rem" }}
             py="0.5rem"
           >

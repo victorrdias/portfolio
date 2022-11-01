@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Button } from "@chakra-ui/react";
 
-const WebNav = () => {
+const WebNav: React.FC = () => {
   return (
     <Flex gap={{ base: "0", md: "6" }} display={{ base: "none", md: "flex" }}>
       <Button

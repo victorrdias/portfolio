@@ -13,7 +13,7 @@ const Main: React.FC<{ title: string; children: React.ReactNode }> = ({
       m="0 auto"
       direction="column"
       maxW="100vw"
-      minH="100vh"
+      minH="100%"
       {...mainProps}
     >
       <Head>

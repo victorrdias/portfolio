@@ -2,7 +2,7 @@ import { Button, Flex } from "@chakra-ui/react";
 import Hamburger from "hamburger-react";
 import React, { useState } from "react";
 
-const MobileNav = () => {
+const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState();
 
   return (

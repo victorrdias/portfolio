@@ -5,7 +5,7 @@ const InvertedSocialButtons = dynamic(
   () => import("../socialButtons/InvertedSocialButtons")
 );
 
-const Hero = () => {
+const Hero: React.FC = () => {
   return (
     <Flex minH="100vh" h="100vh" maxW="100vw" bgColor="#1d1d1d" as="section">
       <Image
@@ -58,7 +58,7 @@ const Hero = () => {
           w={{ base: "100vw", md: "100%" }}
         >
           <Flex direction="column" as="h1">
-            <Image alt="asd" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
+            <Image alt="h2" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
 
             <Text
               px="4"
@@ -97,7 +97,7 @@ const Hero = () => {
               borderRadius="200"
               border="4px"
               alt="photo"
-              color="#65CCA9"
+              color="primaryColor"
               src="/assets/hero-img.png"
               boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
             />
@@ -126,7 +126,7 @@ const Hero = () => {
             src="/assets/hero-img.png"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
             border="4px"
-            color="#65CCA9"
+            color="primaryColor"
           />
         </GridItem>
       </Grid>

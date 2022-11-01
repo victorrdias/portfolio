@@ -1,11 +1,8 @@
 import React from "react";
-import { Flex, IconButton, Link, Text, Image } from "@chakra-ui/react";
-import SocialButtons from "../socialButtons/SocialButtons";
-import { AiFillGithub, AiOutlineWhatsApp } from "react-icons/ai";
-import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { Flex, Text, Image } from "@chakra-ui/react";
 import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const currentDate = Date.now();
   const currentYear = new Date(currentDate).getFullYear();
   return (

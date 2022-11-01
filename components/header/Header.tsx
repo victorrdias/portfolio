@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 const WebNav = dynamic(() => import("./WebNav"));
 const MobileNav = dynamic(() => import("./MobileNav"));
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <Flex
       as="header"

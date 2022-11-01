@@ -5,7 +5,7 @@ const Header = dynamic(() => import("../components/header/Header"));
 const Footer = dynamic(() => import("../components/footer/Footer"));
 const MyProjects = dynamic(() => import("../components/projects/MyProjects"));
 const ScrollToTop = dynamic(() => import("../components/scrollToTop"));
-const Skills = dynamic(() => import("../components/skills"));
+const Skills = dynamic(() => import("../components/skills/Skills"));
 const Subhero = dynamic(() => import("../components/Subhero"));
 import Main from "../layout/Main";
 import { projectContent } from "../utils/contentData/ProjectContent";

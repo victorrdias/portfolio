@@ -1,6 +1,6 @@
 import React from "react";
 import { Flex, IconButton } from "@chakra-ui/react";
-import { HiArrowNarrowUp } from "react-icons/hi";
+import { FaArrowCircleUp } from "react-icons/fa";
 import { useState } from "react";
 
 const ScrollToTop: React.FC = () => {
@@ -31,12 +31,18 @@ const ScrollToTop: React.FC = () => {
         display={visible ? "grid" : "none"}
         position="fixed"
         size="sm"
+        fontSize="2xl"
+        _hover={{
+          color: "#11a271",
+        }}
+        bgColor="#1d1d1d"
+        color="primaryColor"
         bottom="40px"
         right="40px"
         aria-label="back to top button"
-        icon={<HiArrowNarrowUp />}
+        icon={<FaArrowCircleUp />}
         onClick={scrollTop}
-        borderRadius="30"
+        border="2px"
         boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
       />
     </Flex>
