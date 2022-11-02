@@ -5,6 +5,7 @@ import { useInViewport } from "react-in-viewport";
 const Subhero: React.FC = () => {
   return (
     <Flex
+      maxW="100vw"
       as="section"
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
       py="6rem"

@@ -4,7 +4,7 @@ const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
-        width: "100vw",
+        // width: "100vw",
         p: "0",
         margin: "0",
       },

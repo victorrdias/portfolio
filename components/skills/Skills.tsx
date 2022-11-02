@@ -21,6 +21,7 @@ const Skills: React.FC = () => {
   );
   return (
     <Flex
+      maxW="100vw"
       as="section"
       pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
       pr={{ base: "1.5rem", md: "3rem" }}
