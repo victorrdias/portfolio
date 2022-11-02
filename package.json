@@ -20,7 +20,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "react-in-viewport": "^1.0.0-alpha.28"
+    "react-in-viewport": "^1.0.0-alpha.28",
+    "react-typical": "^0.1.3"
   },
   "devDependencies": {
     "@types/node": "^18.8.5",

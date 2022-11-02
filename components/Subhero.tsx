@@ -24,7 +24,7 @@ const Subhero: React.FC = () => {
     >
       <Flex direction="column" gap="2" as="h2">
         <SlideFade
-          offsetY="50px"
+          offsetX="50px"
           in={inViewport}
           delay={0.1}
           whileHover={{ scale: 1.025 }}
@@ -68,12 +68,7 @@ const Subhero: React.FC = () => {
         borderRadius="20"
         direction="column"
       >
-        <SlideFade
-          offsetX="5px"
-          in={inViewport}
-          delay={0.3}
-          whileHover={{ scale: 1.025 }}
-        >
+        <SlideFade offsetY="30px" in={inViewport} delay={0.3}>
           <Image
             opacity={0.5}
             maxW={{ base: "1rem", md: "1.6rem" }}

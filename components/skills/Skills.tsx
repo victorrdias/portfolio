@@ -25,7 +25,7 @@ const Skills: React.FC = () => {
     >
       <Flex as="article" direction="column" gap="1rem">
         <SlideFade
-          offsetY="50px"
+          offsetX="20px"
           in={inViewport}
           delay={0.1}
           whileHover={{ scale: 1.025 }}

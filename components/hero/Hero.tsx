@@ -1,11 +1,29 @@
-import React from "react";
-import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import Typical from "react-typical";
 import dynamic from "next/dynamic";
+
+import {
+  Fade,
+  Flex,
+  Grid,
+  GridItem,
+  Image,
+  Slide,
+  SlideFade,
+  Text,
+} from "@chakra-ui/react";
+import { useInViewport } from "react-in-viewport";
 const InvertedSocialButtons = dynamic(
   () => import("../socialButtons/InvertedSocialButtons")
 );
 
 const Hero: React.FC = () => {
+  const ref = useRef(null);
+  const { inViewport } = useInViewport(
+    ref,
+    { rootMargin: "0px" },
+    { disconnectOnLeave: false }
+  );
   return (
     <Flex minH="100vh" h="100vh" maxW="100vw" bgColor="#1d1d1d" as="section">
       <Image
@@ -26,7 +44,8 @@ const Hero: React.FC = () => {
         opacity={0.4}
         left="55px"
       />
-      <Flex align="flex-end" maxH="100vh" py="12">
+
+      <Flex align="flex-end" maxH="100vh" py="12" ref={ref}>
         <Image
           right="12px"
           position="absolute"
@@ -34,6 +53,7 @@ const Hero: React.FC = () => {
           alt="scrolldownright"
           w={{ base: "36px", md: "48px", lg: "max-content" }}
         />
+
         <Image
           position="absolute"
           src="/assets/downpng.png"
@@ -41,6 +61,7 @@ const Hero: React.FC = () => {
           w={{ base: "36px", md: "48px", lg: "56px" }}
         />
       </Flex>
+
       <Grid
         templateColumns={{ base: "repeat(1,1fr)", md: "repeat(2,1fr)" }}
         w="100%"
@@ -59,24 +80,31 @@ const Hero: React.FC = () => {
         >
           <Flex direction="column" as="h1">
             <Image alt="h2" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
-
-            <Text
-              px="4"
-              fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
-              color="primaryColor"
-              fontWeight="bold"
-              letterSpacing={2}
+            <SlideFade
+              offsetY="80px"
+              in={inViewport}
+              whileHover={{ scale: 1.05 }}
             >
-              Olá! Sou o Vitor Dias
-            </Text>
+              <Text
+                as="aside"
+                px="4"
+                fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
+                color="primaryColor"
+                fontWeight="bold"
+                letterSpacing={2}
+              >
+                Ola! Sou o Vitor Dias
+              </Text>
+            </SlideFade>
             <Text
+              as="aside"
               fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
               color="white"
               fontWeight="bold"
               letterSpacing={2}
               px="4"
             >
-              Desenvolvedor frontend
+              <Typical steps={["Desenvolvedor Front-end", 10]} />
             </Text>
             <Image alt="asd" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
           </Flex>
@@ -113,21 +141,28 @@ const Hero: React.FC = () => {
           gap="12"
           mb={{ base: "", md: "2.5rem", lg: "" }}
         >
-          <Image
-            display={{ base: "none", md: "flex" }}
-            boxSize={{
-              base: "9rem",
-              md: "15rem",
-              lg: "20rem",
-              xl: "20rem",
-            }}
-            borderRadius="200"
-            alt="photo"
-            src="/assets/hero-img.png"
-            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-            border="4px"
-            color="primaryColor"
-          />
+          <SlideFade
+            delay={1}
+            offsetY="200px"
+            in={inViewport}
+            whileHover={{ scale: 1.05 }}
+          >
+            <Image
+              display={{ base: "none", md: "flex" }}
+              boxSize={{
+                base: "9rem",
+                md: "15rem",
+                lg: "20rem",
+                xl: "20rem",
+              }}
+              borderRadius="200"
+              alt="photo"
+              src="/assets/hero-img.png"
+              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+              border="4px"
+              color="primaryColor"
+            />
+          </SlideFade>
         </GridItem>
       </Grid>
     </Flex>
