@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Text,
-  Image,
-  Box,
-  Stack,
-  Progress,
-  SlideFade,
-} from "@chakra-ui/react";
+import { Flex, Text, Image, Box, SlideFade } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import ProgressBars from "./ProgressBars";

@@ -9,7 +9,6 @@ const Skills = dynamic(() => import("../components/skills/Skills"));
 const Subhero = dynamic(() => import("../components/Subhero"));
 import Main from "../layout/Main";
 import { projectContent } from "../utils/contentData/ProjectContent";
-import { Flex } from "@chakra-ui/react";
 
 const index = () => {
   return (
