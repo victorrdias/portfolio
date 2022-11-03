@@ -13,11 +13,12 @@ const Skills: React.FC = () => {
   );
   return (
     <Flex
+      id="skills"
       maxW="100vw"
       as="section"
       pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
       pr={{ base: "1.5rem", md: "3rem" }}
-      py={{ base: "0", md: "4rem" }}
+      py={{ base: "0", md: "8rem" }}
       h="max-content"
       bgColor="#1d1d1d"
       direction={{ base: "column", md: "column", lg: "row" }}
@@ -73,12 +74,12 @@ const Skills: React.FC = () => {
             />
             <Flex
               direction="column"
-              gap={{ base: "1rem", md: "1.5rem" }}
+              gap={{ base: "1rem", md: "2.5rem" }}
               as="section"
             >
               <Text
                 fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "28px", md: "34px" }}
+                lineHeight={{ base: "24px", md: "26px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
@@ -94,7 +95,7 @@ const Skills: React.FC = () => {
 
               <Text
                 fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "28px", md: "34px" }}
+                lineHeight={{ base: "24px", md: "26px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
@@ -108,7 +109,7 @@ const Skills: React.FC = () => {
               </Text>
               <Text
                 fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "28px", md: "34px" }}
+                lineHeight={{ base: "24px", md: "26px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"

@@ -23,11 +23,13 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
       maxW="100%"
       minW="100%"
       as="article"
-      gap={{ base: "2", md: "5" }}
+      gap={{ base: "2", md: "3rem" }}
       direction={{ base: "column", md: "column", lg: "row" }}
     >
       <Link href={link} isExternal>
         <Button
+          maxW="100%"
+          minW="100%"
           borderRadius="none"
           w="100%"
           h="100%"
@@ -42,11 +44,12 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             whileHover={{ scale: 1.025 }}
           >
             <Image
+              width="100%"
               ref={ref}
               objectFit="contain"
               src={image}
-              minH="100%"
-              minW="100%"
+              maxW={{ base: "", md: "", lg: "35rem", xl: "38rem" }}
+              minW={{ base: "", md: "", lg: "35rem", xl: "38rem" }}
               alt="project-image"
               h="100%"
             />
@@ -58,13 +61,11 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         <SlideFade offsetY="100px" delay={0.2} in={inViewport}>
           <Text
             h="100%"
-            minW={{ base: "100%", md: "100%", lg: "40vw" }}
-            maxW={{ base: "100vw", md: "100%", lg: "40vw" }}
-            w="90%"
-            fontSize={{ base: "14", md: "20", lg: "20" }}
-            lineHeight="30px"
+            w="100%"
+            fontSize={{ base: "12", md: "16", lg: "16" }}
+            lineHeight={{ base: "20px", md: "24px" }}
             fontWeight="normal"
-            letterSpacing={2}
+            letterSpacing={1.75}
             color="white"
             textAlign="justify"
           >

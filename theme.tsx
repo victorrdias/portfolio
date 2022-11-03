@@ -4,28 +4,20 @@ const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
-        // width: "100vw",
         p: "0",
+        scrollBehavior: "smooth",
         margin: "0",
       },
     },
   },
   fonts: {
-    body: `"kelly-slab", kelly-slab`,
+    body: `"inter", inter`,
   },
   colors: {
     primaryColor: "#54edba",
   },
   components: {
-    variants: {
-      text: {
-        fontSize: { base: "12", md: "20", lg: "20" },
-        lineHeight: { base: "28px", md: "34px" },
-        fontWeight: "normal",
-        letterSpacing: "2",
-        color: "white",
-      },
-    },
+    Subhero: {},
   },
 });
 export default theme;

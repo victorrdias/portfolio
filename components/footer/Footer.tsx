@@ -1,8 +1,11 @@
-import React from "react";
-import { Flex, Text, Image } from "@chakra-ui/react";
+import React, { useRef } from "react";
+import { Flex, Text, Image, Link, ScaleFade, Button } from "@chakra-ui/react";
 import InvertedSocialButtons from "../socialButtons/InvertedSocialButtons";
+import { useInViewport } from "react-in-viewport";
 
 const Footer: React.FC = () => {
+  const ref = useRef(null);
+  const { inViewport } = useInViewport(ref, { rootMargin: "-10px" });
   const currentDate = Date.now();
   const currentYear = new Date(currentDate).getFullYear();
   return (
@@ -17,6 +20,26 @@ const Footer: React.FC = () => {
       maxW="100vw"
     >
       <Flex direction="column">
+        <Flex w="100%" justify="center" as="article" pb="12">
+          <Link href="https://github.com/victorrdias" isExternal>
+            <ScaleFade in={inViewport} delay={0.5} whileHover={{ scale: 1.05 }}>
+              <Button
+                ref={ref}
+                borderRadius="block"
+                border="1px"
+                fontSize={{ lg: "26px" }}
+                w="max-content"
+                variant="invisible"
+                h="4rem"
+                color="primaryColor"
+                fontWeight="normal"
+                letterSpacing={1.5}
+              >
+                Va para o GitHub
+              </Button>
+            </ScaleFade>
+          </Link>
+        </Flex>
         <Text
           as="h2"
           w="100%"

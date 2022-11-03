@@ -19,15 +19,15 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
   const { inViewport } = useInViewport(ref, { rootMargin: "-10px" });
   return (
     <Flex
+      id="projects"
       as="section"
       minH="max-content"
       bgColor="#1d1d1d"
       direction="column"
-      px={{ base: "1rem", md: "", lg: "2rem" }}
-      gap="4rem"
-      pb={{ md: "6rem", lg: "8rem" }}
+      pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
+      pr={{ base: "1rem", md: "3rem", lg: "3rem" }}
+      gap="1rem"
       py="4rem"
-      ref={ref}
     >
       <SlideFade
         offsetY="10px"
@@ -35,7 +35,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         in={inViewport}
         whileHover={{ scale: 1.025 }}
       >
-        <Flex as="h2" direction="column" align="flex-start ">
+        <Flex as="h2" direction="column" align="flex-start">
           <Image
             maxW="1.6rem"
             alt="section"
@@ -51,6 +51,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             fontSize={{ base: "40", md: "45", lg: "50" }}
             letterSpacing={2}
             lineHeight={{ base: "0,5", md: "0.5" }}
+            ref={ref}
           >
             Meus Projetos
           </Text>
@@ -91,26 +92,6 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           alt="section"
           src="/assets/section2.svg"
         />
-      </Flex>
-
-      <Flex w="100%" justify="center" as="article" ref={ref}>
-        <Link href="https://github.com/victorrdias" isExternal>
-          <ScaleFade in={inViewport} delay={0.5} whileHover={{ scale: 1.05 }}>
-            <Button
-              borderRadius="block"
-              border="1px"
-              fontSize={{ lg: "26px" }}
-              w="max-content"
-              variant="invisible"
-              h="4rem"
-              color="primaryColor"
-              fontWeight="normal"
-              letterSpacing={1.5}
-            >
-              Va para o GitHub
-            </Button>
-          </ScaleFade>
-        </Link>
       </Flex>
     </Flex>
   );

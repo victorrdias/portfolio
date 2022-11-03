@@ -11,7 +11,8 @@ const Subhero: React.FC = () => {
       id="subhero"
       maxW="100vw"
       as="section"
-      px={{ base: "1rem", md: "5rem", lg: "8rem" }}
+      pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
+      pr={{ base: "1rem", md: "3rem", lg: "8rem" }}
       py="6rem"
       h="max-content"
       bgColor="#1d1d1d"
@@ -39,7 +40,7 @@ const Subhero: React.FC = () => {
             fontWeight="bold"
             fontSize={{ base: "40", md: "45", lg: "50" }}
             letterSpacing={3}
-            lineHeight={{ base: "0,5", md: "1.3" }}
+            lineHeight={{ base: "0,5", md: "1" }}
           >
             Sobre mim
           </Text>
@@ -72,10 +73,16 @@ const Subhero: React.FC = () => {
             alt="section"
             src="/assets/p-1.svg"
           />
-          <Flex direction="column" gap={{ base: "0", md: "1rem" }} as="section">
+          <Flex
+            direction="column"
+            gap={{ base: "1rem", md: "2rem" }}
+            as="section"
+            minW={{ base: "100%", md: "100%", lg: "40vw" }}
+            maxW={{ base: "100vw", md: "100%", lg: "40vw" }}
+          >
             <Text
               fontSize={{ base: "14", md: "20", lg: "20" }}
-              lineHeight={{ base: "28px", md: "34px" }}
+              lineHeight={{ base: "24px", md: "26px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"
@@ -91,7 +98,7 @@ const Subhero: React.FC = () => {
             <Text
               ref={ref}
               fontSize={{ base: "14", md: "20", lg: "20" }}
-              lineHeight={{ base: "28px", md: "34px" }}
+              lineHeight={{ base: "24px", md: "26px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"
@@ -104,8 +111,8 @@ const Subhero: React.FC = () => {
               estudos.
             </Text>
             <Text
-              fontSize={{ base: "14 ", md: "20", lg: "20" }}
-              lineHeight={{ base: "28px", md: "34px" }}
+              fontSize={{ base: "14", md: "20", lg: "20" }}
+              lineHeight={{ base: "24px", md: "26px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"

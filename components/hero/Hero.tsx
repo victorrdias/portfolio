@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           mt={{ base: "5.5rem", md: "0" }}
           direction="column"
           pl={{ base: "0.5rem", md: "6rem", lg: "8rem", xl: "10rem" }}
-          pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
+          // pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
           gap="7rem"
           align="center"
           justify="center"
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
               <Text
                 as="aside"
                 px="4"
-                fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
+                fontSize={{ base: "20", md: "25", lg: "30", xl: "35" }}
                 color="primaryColor"
                 fontWeight="bold"
                 letterSpacing={2}
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
             </SlideFade>
             <Text
               as="aside"
-              fontSize={{ base: "15", md: "25", lg: "30", xl: "35" }}
+              fontSize={{ base: "20", md: "25", lg: "30", xl: "30" }}
               color="white"
               fontWeight="bold"
               letterSpacing={2}
