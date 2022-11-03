@@ -24,10 +24,10 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       minH="max-content"
       bgColor="#1d1d1d"
       direction="column"
-      pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
-      pr={{ base: "1rem", md: "3rem", lg: "3rem" }}
+      pl={{ base: "1.5rem", md: "5rem", lg: "8rem" }}
+      pr={{ base: "1.5rem", md: "3rem", lg: "3rem" }}
       gap="1rem"
-      py="4rem"
+      py={{ base: "10rem", md: "6rem", lg: "" }}
     >
       <SlideFade
         offsetY="10px"
@@ -73,7 +73,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           src="/assets/section1.svg"
         />
 
-        <Flex direction="column" gap="4rem">
+        <Flex direction="column" gap="2rem">
           {projectContent.map((project) => (
             <Project
               key={project.description}

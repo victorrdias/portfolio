@@ -13,7 +13,7 @@ const Subhero: React.FC = () => {
       as="section"
       pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
       pr={{ base: "1rem", md: "3rem", lg: "8rem" }}
-      py="6rem"
+      py={{ base: "10rem", md: "4rem", lg: "6rem" }}
       h="max-content"
       bgColor="#1d1d1d"
       align="flex-start"

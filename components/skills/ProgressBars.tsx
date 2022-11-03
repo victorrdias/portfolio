@@ -37,6 +37,7 @@ const ProgressBars: React.FC = () => {
           whileHover={{ scale: 1.025 }}
         >
           <Text
+            ref={ref}
             color="white"
             fontWeight="normal"
             fontSize={{ base: "15", md: "25", lg: "25" }}
@@ -54,7 +55,6 @@ const ProgressBars: React.FC = () => {
           whileHover={{ scale: 1.025 }}
         >
           <Text
-            ref={ref}
             color="white"
             fontWeight="normal"
             fontSize={{ base: "15", md: "25", lg: "25" }}

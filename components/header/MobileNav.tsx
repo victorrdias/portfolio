@@ -31,52 +31,58 @@ const MobileNav: React.FC = () => {
           ref={ref}
         >
           <SlideFade offsetX="80px" in={inViewport} delay={0.1}>
-            <Button
-              variant="invisible"
-              color="white"
-              borderRadius="10"
-              h="3vh"
-              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-              _hover={{
-                color: "#65CCA9",
-              }}
-              fontWeight="normal"
-              letterSpacing={1.5}
-            >
-              Sobre
-            </Button>
+            <a href="#subhero">
+              <Button
+                variant="invisible"
+                color="white"
+                borderRadius="10"
+                h="3vh"
+                boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+                _hover={{
+                  color: "#65CCA9",
+                }}
+                fontWeight="normal"
+                letterSpacing={1.5}
+              >
+                Sobre
+              </Button>
+            </a>
           </SlideFade>
           <SlideFade offsetX="80px" in={inViewport} delay={0.225}>
-            <Button
-              variant="invisible"
-              color="white"
-              borderRadius="10"
-              h="3vh"
-              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-              _hover={{
-                color: "#65CCA9",
-              }}
-              fontWeight="normal"
-              letterSpacing={1.5}
-            >
-              Habilidades
-            </Button>
+            <a href="#skills">
+              <Button
+                variant="invisible"
+                color="white"
+                borderRadius="10"
+                h="3vh"
+                boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+                _hover={{
+                  color: "#65CCA9",
+                }}
+                fontWeight="normal"
+                letterSpacing={1.5}
+              >
+                Habilidades
+              </Button>
+            </a>
           </SlideFade>
           <SlideFade offsetX="80px" in={inViewport} delay={0.35}>
-            <Button
-              variant="invisible"
-              color="white"
-              borderRadius="10"
-              h="3vh"
-              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-              _hover={{
-                color: "#65CCA9",
-              }}
-              fontWeight="normal"
-              letterSpacing={1.5}
-            >
-              Projetos
-            </Button>
+            <a href="#projects">
+              <Button
+                variant="invisible"
+                color="white"
+                borderRadius="10"
+                h="3vh"
+                boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+                _hover={{
+                  color: "#65CCA9",
+                }}
+                fontWeight="normal"
+                letterSpacing={1.5}
+              >
+                Projetos
+              </Button>
+            </a>
           </SlideFade>
         </Flex>
       ) : (
