@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
         left="55px"
       />
 
-      <Flex align="flex-end" maxH="100vh" py="12" ref={ref}>
+      <Flex align="flex-end" maxH="100vh" ref={ref} py="2rem">
         <Image
           right="12px"
           position="absolute"
@@ -71,42 +71,55 @@ const Hero: React.FC = () => {
           as={Flex}
           mt={{ base: "5.5rem", md: "0" }}
           direction="column"
-          pl={{ base: "0.5rem", md: "6rem", lg: "8rem", xl: "10rem" }}
-          // pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
+          pl={{ base: "0", md: "5rem" }}
+          //pl={{ base: "0.5rem", md: "6rem", lg: "8rem", xl: "10rem" }}
           gap="7rem"
           align="center"
           justify="center"
           w={{ base: "100vw", md: "100%" }}
         >
-          <Flex direction="column" as="h1">
-            <Image alt="h2" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
+          <Flex direction="column" as="h1" py="2">
+            <Image
+              alt="h2"
+              w="1.5rem"
+              position="relative"
+              right="20px"
+              opacity="0.5"
+              src="/assets/h2-1.svg"
+            />
             <SlideFade
               offsetY="80px"
               in={inViewport}
               whileHover={{ scale: 1.05 }}
             >
               <Text
+                textAlign={{ base: "center", md: "start" }}
                 as="aside"
-                px="4"
-                fontSize={{ base: "20", md: "25", lg: "30", xl: "35" }}
+                fontSize={{ base: "20", md: "25", lg: "35", xl: "35" }}
                 color="primaryColor"
                 fontWeight="bold"
                 letterSpacing={2}
               >
-                Ola! Sou o Vitor Dias
+                Ola! Sou o Vitor Dias.
               </Text>
             </SlideFade>
             <Text
               as="aside"
-              fontSize={{ base: "20", md: "25", lg: "30", xl: "30" }}
+              fontSize={{ base: "20", md: "20", lg: "30", xl: "30" }}
               color="white"
               fontWeight="bold"
               letterSpacing={2}
-              px="4"
             >
               <Typical steps={["Desenvolvedor Front-end", 10]} />
             </Text>
-            <Image alt="asd" w="1.5rem" opacity="0.5" src="/assets/h2-1.svg" />
+            <Image
+              alt="asd"
+              w="1.5rem"
+              position="relative"
+              right="20px"
+              opacity="0.5"
+              src="/assets/h2-1.svg"
+            />
           </Flex>
           <Flex
             as="section"
@@ -117,12 +130,7 @@ const Hero: React.FC = () => {
             <SlideFade offsetY="80px" in={inViewport} delay={0.25}>
               <Image
                 display={{ base: "flex", md: "none" }}
-                boxSize={{
-                  base: "12rem",
-                  md: "15rem",
-                  lg: "20rem",
-                  xl: "20rem",
-                }}
+                boxSize="12rem"
                 borderRadius="200"
                 border="4px"
                 alt="photo"
@@ -138,10 +146,10 @@ const Hero: React.FC = () => {
         <GridItem
           as={Flex}
           align="center"
-          justify="center "
+          justify="center"
           direction="column"
-          gap="12"
-          mb={{ base: "", md: "2.5rem", lg: "" }}
+          gap="12rem"
+          mb={{ base: "0", md: "7rem", lg: "5rem" }}
         >
           <SlideFade
             delay={1}
@@ -152,8 +160,7 @@ const Hero: React.FC = () => {
             <Image
               display={{ base: "none", md: "flex" }}
               boxSize={{
-                base: "9rem",
-                md: "15rem",
+                md: "18rem",
                 lg: "20rem",
                 xl: "20rem",
               }}

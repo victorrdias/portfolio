@@ -11,9 +11,9 @@ const Subhero: React.FC = () => {
       id="subhero"
       maxW="100vw"
       as="section"
-      pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
-      pr={{ base: "1rem", md: "3rem", lg: "8rem" }}
-      py={{ base: "10rem", md: "4rem", lg: "6rem" }}
+      pl={{ base: "1rem", md: "4rem", lg: "8rem" }}
+      pr={{ base: "1rem", md: "4rem", lg: "8rem" }}
+      py={{ base: "5rem", md: "4rem", lg: "6rem" }}
       h="max-content"
       bgColor="#1d1d1d"
       align="flex-start"
@@ -77,8 +77,8 @@ const Subhero: React.FC = () => {
             direction="column"
             gap={{ base: "1rem", md: "2rem" }}
             as="section"
-            minW={{ base: "100%", md: "100%", lg: "40vw" }}
-            maxW={{ base: "100vw", md: "100%", lg: "40vw" }}
+            minW={{ base: "100%", md: "100%", lg: "35rem", xl: "40rem" }}
+            maxW={{ base: "100%", md: "100%", lg: "35rem", xl: "40rem" }}
           >
             <Text
               fontSize={{ base: "14", md: "20", lg: "20" }}
@@ -87,7 +87,6 @@ const Subhero: React.FC = () => {
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
-              py="0.5rem"
               textAlign="justify"
             >
               Sou desenvolvedor front-end, morando no interior de Sao Paulo,
@@ -103,7 +102,6 @@ const Subhero: React.FC = () => {
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
-              py="0.5rem"
               textAlign="justify"
             >
               Tenho desejo por aprender e sempre gostei dos estudos no que se
@@ -117,7 +115,6 @@ const Subhero: React.FC = () => {
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
-              py="0.5rem"
               textAlign="justify"
             >
               Apos formado decidi transicionar de carreira para à programação,

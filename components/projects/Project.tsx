@@ -23,13 +23,12 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
       maxW="100%"
       minW="100%"
       as="article"
-      gap={{ base: "2", md: "3rem" }}
+      gap={{ base: "2", md: "1rem", lg: "6rem" }}
       direction={{ base: "column", md: "column", lg: "row" }}
     >
       <Link href={link} isExternal>
         <Button
-          maxW="100%"
-          minW="100%"
+          p="0"
           borderRadius="none"
           w="100%"
           h="100%"
@@ -48,8 +47,8 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
               ref={ref}
               objectFit="contain"
               src={image}
-              maxW={{ base: "", md: "", lg: "35rem", xl: "38rem" }}
-              minW={{ base: "", md: "", lg: "35rem", xl: "38rem" }}
+              maxW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
+              minW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
               alt="project-image"
               h="100%"
             />
@@ -57,10 +56,10 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         </Button>
       </Link>
 
-      <Flex px={{ base: "1rem", md: "" }}>
+      <Flex border="1px" borderColor="primaryColor">
         <SlideFade offsetY="100px" delay={0.2} in={inViewport}>
           <Text
-            h="100%"
+            h="18rem"
             w="100%"
             fontSize={{ base: "12", md: "16", lg: "16" }}
             lineHeight={{ base: "20px", md: "24px" }}

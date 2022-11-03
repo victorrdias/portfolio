@@ -16,9 +16,9 @@ const Skills: React.FC = () => {
       id="skills"
       maxW="100vw"
       as="section"
-      pl={{ base: "1rem", md: "5rem", lg: "8rem" }}
-      pr={{ base: "1.5rem", md: "3rem" }}
-      py={{ base: "10rem", md: "6rem", lg: "12rem" }}
+      pl={{ base: "1rem", md: "4rem", lg: "8rem" }}
+      pr={{ base: "1.5rem", md: "4rem", lg: "3rem" }}
+      py={{ base: "5rem", md: "6rem", lg: "12rem" }}
       h="max-content"
       bgColor="#1d1d1d"
       direction={{ base: "column", md: "column", lg: "row" }}

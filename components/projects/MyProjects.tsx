@@ -24,8 +24,8 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       minH="max-content"
       bgColor="#1d1d1d"
       direction="column"
-      pl={{ base: "1.5rem", md: "5rem", lg: "8rem" }}
-      pr={{ base: "1.5rem", md: "3rem", lg: "3rem" }}
+      pl={{ base: "1.5rem", md: "4rem", lg: "9rem" }}
+      pr={{ base: "1.5rem", md: "4rem", lg: "3rem" }}
       gap="1rem"
       py={{ base: "10rem", md: "6rem", lg: "" }}
     >
@@ -37,6 +37,8 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
       >
         <Flex as="h2" direction="column" align="flex-start">
           <Image
+            position="relative"
+            right={{ base: "2", md: "1", lg: "6" }}
             maxW="1.6rem"
             alt="section"
             src="/assets/h2-1.svg"
@@ -44,9 +46,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           />
           <Text
             color="#54edba"
-            textAlign="center"
-            justifyContent="center"
-            p={{ base: "0.5rem", md: "1rem" }}
+            py={{ base: "0.5rem", md: "1rem" }}
             fontWeight="bold"
             fontSize={{ base: "40", md: "45", lg: "50" }}
             letterSpacing={2}
@@ -56,6 +56,8 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             Meus Projetos
           </Text>
           <Image
+            position="relative"
+            right={{ base: "2", md: "1", lg: "6" }}
             maxW="2rem"
             alt="section"
             src="/assets/h2-2.svg"
