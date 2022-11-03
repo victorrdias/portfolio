@@ -4,14 +4,11 @@ import { useInViewport } from "react-in-viewport";
 
 const Subhero: React.FC = () => {
   const ref = useRef(null);
-  const { inViewport } = useInViewport(
-    ref,
-    { rootMargin: "0px" },
+  const { inViewport } = useInViewport(ref, { rootMargin: "0px" }, {});
 
-    {}
-  );
   return (
     <Flex
+      id="subhero"
       maxW="100vw"
       as="section"
       px={{ base: "1rem", md: "5rem", lg: "8rem" }}
@@ -40,9 +37,9 @@ const Subhero: React.FC = () => {
             px="1.4rem"
             color="primaryColor"
             fontWeight="bold"
-            fontSize={{ base: "30", md: "35", lg: "40" }}
+            fontSize={{ base: "40", md: "45", lg: "50" }}
             letterSpacing={3}
-            lineHeight={{ base: "0,5", md: "1" }}
+            lineHeight={{ base: "0,5", md: "1.3" }}
           >
             Sobre mim
           </Text>
@@ -77,13 +74,14 @@ const Subhero: React.FC = () => {
           />
           <Flex direction="column" gap={{ base: "0", md: "1rem" }} as="section">
             <Text
-              fontSize={{ base: "12", md: "20", lg: "20" }}
+              fontSize={{ base: "14", md: "20", lg: "20" }}
               lineHeight={{ base: "28px", md: "34px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
               py="0.5rem"
+              textAlign="justify"
             >
               Sou desenvolvedor front-end, morando no interior de Sao Paulo,
               historiador de formação pela Universidade Estadual de São Paulo,
@@ -92,26 +90,28 @@ const Subhero: React.FC = () => {
             </Text>
             <Text
               ref={ref}
-              fontSize={{ base: "12", md: "20", lg: "20" }}
+              fontSize={{ base: "14", md: "20", lg: "20" }}
               lineHeight={{ base: "28px", md: "34px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
               py="0.5rem"
+              textAlign="justify"
             >
               Tenho desejo por aprender e sempre gostei dos estudos no que se
               refere à história, e como a união com a tecnologia beneficia seus
               estudos.
             </Text>
             <Text
-              fontSize={{ base: "12", md: "20", lg: "20" }}
+              fontSize={{ base: "14 ", md: "20", lg: "20" }}
               lineHeight={{ base: "28px", md: "34px" }}
               fontWeight="normal"
               letterSpacing={2}
               color="white"
               px={{ base: "1.5rem", md: "1.5rem" }}
               py="0.5rem"
+              textAlign="justify"
             >
               Apos formado decidi transicionar de carreira para à programação,
               com a ajuda dos meus amigos programadores, comecei a me aprofundar

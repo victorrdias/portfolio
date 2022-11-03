@@ -61,11 +61,12 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             minW={{ base: "100%", md: "100%", lg: "40vw" }}
             maxW={{ base: "100vw", md: "100%", lg: "40vw" }}
             w="90%"
-            fontSize={{ base: "12", md: "16", lg: "16" }}
+            fontSize={{ base: "14", md: "20", lg: "20" }}
             lineHeight="30px"
             fontWeight="normal"
             letterSpacing={2}
             color="white"
+            textAlign="justify"
           >
             {description}
           </Text>

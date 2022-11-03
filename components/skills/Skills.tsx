@@ -42,7 +42,7 @@ const Skills: React.FC = () => {
               px="5"
               color="primaryColor"
               fontWeight="bold"
-              fontSize={{ base: "30", md: "35", lg: "40" }}
+              fontSize={{ base: "40", md: "45", lg: "50" }}
               letterSpacing={3}
               lineHeight={{ base: "0,5", md: "1" }}
             >
@@ -77,12 +77,13 @@ const Skills: React.FC = () => {
               as="section"
             >
               <Text
-                fontSize={{ base: "12", md: "20", lg: "20" }}
+                fontSize={{ base: "14", md: "20", lg: "20" }}
                 lineHeight={{ base: "28px", md: "34px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
                 px={{ base: "1.4rem", md: "1.5rem" }}
+                textAlign="justify"
               >
                 Possuo conhecimento solido em HTML, JavaScript e CSS, atuo
                 desenvolvendo interfaces totalmente responsivas, utilizando o
@@ -92,25 +93,27 @@ const Skills: React.FC = () => {
               </Text>
 
               <Text
-                fontSize={{ base: "12", md: "20", lg: "20" }}
+                fontSize={{ base: "14", md: "20", lg: "20" }}
                 lineHeight={{ base: "28px", md: "34px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
                 px={{ base: "1.4rem", md: "1.5rem" }}
                 ref={ref}
+                textAlign="justify"
               >
                 Atualmente desenvolvo com a biblioteca CSS ChakraUI, possuindo
                 também experiencia em TailWindCSS, além de possuir conhecimentos
                 consistentes em consumo de API e Firebase.
               </Text>
               <Text
-                fontSize={{ base: "12", md: "20", lg: "20" }}
+                fontSize={{ base: "14", md: "20", lg: "20" }}
                 lineHeight={{ base: "28px", md: "34px" }}
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
                 px={{ base: "1.4rem", md: "1.5rem" }}
+                textAlign="justify"
               >
                 Desde o início da minha jornada na programação mantenho o foco
                 em aplicar boas práticas, seguindo padrões já consagrados como o

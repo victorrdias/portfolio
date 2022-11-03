@@ -48,7 +48,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
             justifyContent="center"
             p={{ base: "0.5rem", md: "1rem" }}
             fontWeight="bold"
-            fontSize={{ base: "30", md: "35", lg: "45" }}
+            fontSize={{ base: "40", md: "45", lg: "50" }}
             letterSpacing={2}
             lineHeight={{ base: "0,5", md: "0.5" }}
           >

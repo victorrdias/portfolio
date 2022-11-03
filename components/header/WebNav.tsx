@@ -2,9 +2,25 @@ import React from "react";
 import { Flex, Button } from "@chakra-ui/react";
 
 const WebNav: React.FC = () => {
+  const scroll2El = (subhero) => {
+    window.scrollTo({
+      top: document.getElementById(subhero).offsetTop - 60,
+      behavior: "smooth",
+    });
+  };
+
+  const onBtnClick = (e) => {
+    e.preventDefault();
+    const goto = e.target.getAttribute("goto");
+    setTimeout(() => {
+      scroll2El(goto);
+    }, 100);
+  };
+
   return (
     <Flex gap={{ base: "0", md: "6" }} display={{ base: "none", md: "flex" }}>
       <Button
+        onClick={onBtnClick}
         variant="invisible"
         color="white"
         borderRadius="10"

@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
           as={Flex}
           mt={{ base: "5.5rem", md: "0" }}
           direction="column"
-          pl={{ base: "2rem", md: "6rem", lg: "8rem", xl: "10rem" }}
+          pl={{ base: "0.5rem", md: "6rem", lg: "8rem", xl: "10rem" }}
           pr={{ base: "0.5rem", md: "3rem", lg: "4rem", xl: "5rem" }}
           gap="7rem"
           align="center"
@@ -114,21 +114,23 @@ const Hero: React.FC = () => {
             align={{ base: "center", md: "center", lg: "center" }}
             gap="7rem"
           >
-            <Image
-              display={{ base: "flex", md: "none" }}
-              boxSize={{
-                base: "12rem",
-                md: "15rem",
-                lg: "20rem",
-                xl: "20rem",
-              }}
-              borderRadius="200"
-              border="4px"
-              alt="photo"
-              color="primaryColor"
-              src="/assets/hero-img.png"
-              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-            />
+            <SlideFade offsetY="80px" in={inViewport} delay={0.25}>
+              <Image
+                display={{ base: "flex", md: "none" }}
+                boxSize={{
+                  base: "12rem",
+                  md: "15rem",
+                  lg: "20rem",
+                  xl: "20rem",
+                }}
+                borderRadius="200"
+                border="4px"
+                alt="photo"
+                color="primaryColor"
+                src="/assets/hero-img.png"
+                boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+              />
+            </SlideFade>
             <InvertedSocialButtons />
           </Flex>
         </GridItem>
