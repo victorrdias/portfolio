@@ -23,7 +23,7 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
       maxW="100%"
       minW="100%"
       as="article"
-      gap={{ base: "2", md: "1rem", lg: "6rem" }}
+      gap={{ base: "2", md: "1rem", lg: "5.5rem" }}
       direction={{ base: "column", md: "column", lg: "row" }}
     >
       <Link href={link} isExternal>
@@ -43,6 +43,8 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
             whileHover={{ scale: 1.025 }}
           >
             <Image
+              boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+              borderRadius="0.5rem"
               width="100%"
               ref={ref}
               objectFit="contain"
@@ -56,9 +58,14 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         </Button>
       </Link>
 
-      <Flex border="1px" borderColor="primaryColor">
+      <Flex
+        borderRadius="0.5rem"
+        bgColor="#333333"
+        boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+      >
         <SlideFade offsetY="100px" delay={0.2} in={inViewport}>
           <Text
+            p="0.5rem"
             h="18rem"
             w="100%"
             fontSize={{ base: "12", md: "16", lg: "16" }}

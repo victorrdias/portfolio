@@ -1,6 +1,7 @@
 import { Flex, Text, Image, Box, SlideFade } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
+import DivImages from "../DivImages";
 import ProgressBars from "./ProgressBars";
 
 const Skills: React.FC = () => {
@@ -16,13 +17,12 @@ const Skills: React.FC = () => {
       id="skills"
       maxW="100vw"
       as="section"
-      pl={{ base: "1rem", md: "4rem", lg: "8rem" }}
-      pr={{ base: "1.5rem", md: "4rem", lg: "3rem" }}
+      px={{ base: "2.3rem", md: "4rem", lg: "7rem" }}
       py={{ base: "5rem", md: "6rem", lg: "12rem" }}
       h="max-content"
       bgColor="#1d1d1d"
       direction={{ base: "column", md: "column", lg: "row" }}
-      gap={{ base: "0", lg: "3rem" }}
+      gap={{ base: "", lg: "5.5rem" }}
     >
       <Flex as="article" direction="column" gap="1rem">
         <SlideFade
@@ -31,16 +31,9 @@ const Skills: React.FC = () => {
           delay={0.1}
           whileHover={{ scale: 1.025 }}
         >
-          <Flex as="h2" direction="column" gap="1">
-            <Image
-              ref={ref}
-              maxW="1.6rem"
-              alt="section"
-              src="/assets/h2-1.svg"
-              opacity={0.5}
-            />
+          <Flex as="h2" direction="column">
+            <DivImages src="/assets/h2-1.svg" />
             <Text
-              px="5"
               color="primaryColor"
               fontWeight="bold"
               fontSize={{ base: "40", md: "45", lg: "50" }}
@@ -50,28 +43,18 @@ const Skills: React.FC = () => {
               Habilidades
             </Text>
 
-            <Image
-              maxW="2rem"
-              opacity={0.5}
-              alt="section"
-              src="/assets/h2-2.svg"
-            />
+            <DivImages src="/assets/h2-2.svg" />
           </Flex>
         </SlideFade>
         <Flex
           as="aside"
-          maxW={{ base: "", md: "", lg: "35rem", xl: "40rem" }}
-          minW={{ base: "", md: "", lg: "35rem", xl: "40rem" }}
+          maxW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
+          minW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
           borderRadius="20"
           direction="column"
         >
           <SlideFade delay={0.4} offsetY="10px" in={inViewport}>
-            <Image
-              opacity={0.5}
-              maxW={{ base: "1rem", md: "1.4rem" }}
-              alt="section"
-              src="/assets/p-1.svg"
-            />
+            <DivImages src="/assets/p-1.svg" />
             <Flex
               direction="column"
               gap={{ base: "1rem", md: "2.5rem" }}
@@ -83,7 +66,7 @@ const Skills: React.FC = () => {
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
-                px={{ base: "1.4rem", md: "1.5rem" }}
+                //px={{ base: "1.4rem", md: "1.5rem" }}
                 textAlign="justify"
               >
                 Possuo conhecimento solido em HTML, JavaScript e CSS, atuo
@@ -99,7 +82,6 @@ const Skills: React.FC = () => {
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
-                px={{ base: "1.4rem", md: "1.5rem" }}
                 ref={ref}
                 textAlign="justify"
               >
@@ -113,7 +95,6 @@ const Skills: React.FC = () => {
                 fontWeight="normal"
                 letterSpacing={2}
                 color="white"
-                px={{ base: "1.4rem", md: "1.5rem" }}
                 textAlign="justify"
               >
                 Desde o início da minha jornada na programação mantenho o foco
@@ -121,12 +102,7 @@ const Skills: React.FC = () => {
                 CleanCode, assim como o uso e o dominio do Git.
               </Text>
             </Flex>
-            <Image
-              maxW={{ base: "1.4rem", md: "2rem" }}
-              alt="section"
-              opacity={0.3}
-              src="/assets/p-2.svg"
-            />
+            <DivImages src="/assets/p-2.svg" />
           </SlideFade>
         </Flex>
       </Flex>

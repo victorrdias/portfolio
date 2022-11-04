@@ -12,7 +12,7 @@ const ProgressBars: React.FC = () => {
   return (
     <>
       {" "}
-      <Stack gap="4" px="5" as="aside">
+      <Stack gap="4" as="aside">
         <SlideFade
           offsetX="10px"
           delay={0.8}
@@ -28,7 +28,12 @@ const ProgressBars: React.FC = () => {
           >
             ReactJS
           </Text>
-          <Progress size="xs" colorScheme="cyan" value={65}></Progress>
+          <Progress
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+            size="xs"
+            colorScheme="cyan"
+            value={65}
+          ></Progress>
         </SlideFade>
         <SlideFade
           offsetX="10px"
@@ -46,7 +51,12 @@ const ProgressBars: React.FC = () => {
           >
             Front-end
           </Text>
-          <Progress size="xs" colorScheme="purple" value={80}></Progress>
+          <Progress
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+            size="xs"
+            colorScheme="purple"
+            value={80}
+          ></Progress>
         </SlideFade>
         <SlideFade
           offsetX="10px"
@@ -63,7 +73,12 @@ const ProgressBars: React.FC = () => {
           >
             Back-end
           </Text>
-          <Progress size="xs" colorScheme="pink" value={40}></Progress>
+          <Progress
+            size="xs"
+            colorScheme="pink"
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+            value={40}
+          ></Progress>
         </SlideFade>
         <SlideFade
           offsetX="10px"
@@ -80,7 +95,12 @@ const ProgressBars: React.FC = () => {
           >
             Chakra-UI
           </Text>
-          <Progress size="xs" colorScheme="messenger" value={92}></Progress>
+          <Progress
+            boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
+            size="xs"
+            colorScheme="messenger"
+            value={92}
+          ></Progress>
         </SlideFade>
       </Stack>
     </>

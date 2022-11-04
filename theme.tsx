@@ -4,7 +4,6 @@ const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
-        p: "0",
         scrollBehavior: "smooth",
         margin: "0",
       },

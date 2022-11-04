@@ -2,17 +2,9 @@ import React, { useRef } from "react";
 import Typical from "react-typical";
 import dynamic from "next/dynamic";
 
-import {
-  Fade,
-  Flex,
-  Grid,
-  GridItem,
-  Image,
-  Slide,
-  SlideFade,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, Grid, GridItem, Image, SlideFade, Text } from "@chakra-ui/react";
 import { useInViewport } from "react-in-viewport";
+import DivImages from "../DivImages";
 const InvertedSocialButtons = dynamic(
   () => import("../socialButtons/InvertedSocialButtons")
 );
@@ -32,17 +24,17 @@ const Hero: React.FC = () => {
         position="absolute"
         opacity={0.4}
         alt="html"
-        top={{ base: "40px", md: "50px", lg: "50px" }}
-        left="30px"
+        top={{ base: "40px", md: "50px", lg: "40px" }}
+        left="5px"
       />
       <Image
         src="/assets/body-1.svg"
         boxSize="2.4rem"
         position="absolute"
         alt="html"
-        top={{ base: "60px", md: "75px", lg: "75px" }}
+        top={{ base: "60px", md: "75px", lg: "60px" }}
         opacity={0.4}
-        left="55px"
+        left="20px"
       />
 
       <Flex align="flex-end" maxH="100vh" ref={ref} py="2rem">
@@ -71,22 +63,13 @@ const Hero: React.FC = () => {
           as={Flex}
           mt={{ base: "5.5rem", md: "0" }}
           direction="column"
-          pl={{ base: "0", md: "5rem" }}
-          //pl={{ base: "0.5rem", md: "6rem", lg: "8rem", xl: "10rem" }}
           gap="7rem"
           align="center"
           justify="center"
           w={{ base: "100vw", md: "100%" }}
         >
           <Flex direction="column" as="h1" py="2">
-            <Image
-              alt="h2"
-              w="1.5rem"
-              position="relative"
-              right="20px"
-              opacity="0.5"
-              src="/assets/h2-1.svg"
-            />
+            <DivImages src="/assets/h2-1.svg" />
             <SlideFade
               offsetY="80px"
               in={inViewport}
@@ -112,14 +95,7 @@ const Hero: React.FC = () => {
             >
               <Typical steps={["Desenvolvedor Front-end", 10]} />
             </Text>
-            <Image
-              alt="asd"
-              w="1.5rem"
-              position="relative"
-              right="20px"
-              opacity="0.5"
-              src="/assets/h2-1.svg"
-            />
+            <DivImages src="/assets/h2-2.svg" />
           </Flex>
           <Flex
             as="section"

@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Flex, Text, Image, ScaleFade, SlideFade } from "@chakra-ui/react";
 import { useInViewport } from "react-in-viewport";
+import DivImages from "./DivImages";
 
 const Subhero: React.FC = () => {
   const ref = useRef(null);
@@ -11,8 +12,7 @@ const Subhero: React.FC = () => {
       id="subhero"
       maxW="100vw"
       as="section"
-      pl={{ base: "1rem", md: "4rem", lg: "8rem" }}
-      pr={{ base: "1rem", md: "4rem", lg: "8rem" }}
+      px={{ base: "2.3rem", md: "4rem", lg: "7rem" }}
       py={{ base: "5rem", md: "4rem", lg: "6rem" }}
       h="max-content"
       bgColor="#1d1d1d"
@@ -27,15 +27,8 @@ const Subhero: React.FC = () => {
           delay={0.1}
           whileHover={{ scale: 1.025 }}
         >
-          <Image
-            ref={ref}
-            maxW="1.6rem"
-            alt="section"
-            src="/assets/h2-1.svg"
-            opacity={0.5}
-          />
+          <DivImages src="/assets/h2-1.svg" />
           <Text
-            px="1.4rem"
             color="primaryColor"
             fontWeight="bold"
             fontSize={{ base: "40", md: "45", lg: "50" }}
@@ -45,12 +38,7 @@ const Subhero: React.FC = () => {
             Sobre mim
           </Text>
 
-          <Image
-            maxW="2rem"
-            opacity={0.5}
-            alt="section"
-            src="/assets/h2-2.svg"
-          />
+          <DivImages src="/assets/h2-2.svg" />
         </SlideFade>
       </Flex>
       <Flex
@@ -67,18 +55,13 @@ const Subhero: React.FC = () => {
         direction="column"
       >
         <SlideFade offsetY="30px" in={inViewport} delay={0.3}>
-          <Image
-            opacity={0.5}
-            maxW={{ base: "1rem", md: "1.6rem" }}
-            alt="section"
-            src="/assets/p-1.svg"
-          />
+          <DivImages src="/assets/p-1.svg" />
           <Flex
             direction="column"
             gap={{ base: "1rem", md: "2rem" }}
             as="section"
-            minW={{ base: "100%", md: "100%", lg: "35rem", xl: "40rem" }}
-            maxW={{ base: "100%", md: "100%", lg: "35rem", xl: "40rem" }}
+            maxW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
+            minW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
           >
             <Text
               fontSize={{ base: "14", md: "20", lg: "20" }}
@@ -86,7 +69,6 @@ const Subhero: React.FC = () => {
               fontWeight="normal"
               letterSpacing={2}
               color="white"
-              px={{ base: "1.5rem", md: "1.5rem" }}
               textAlign="justify"
             >
               Sou desenvolvedor front-end, morando no interior de Sao Paulo,
@@ -101,7 +83,6 @@ const Subhero: React.FC = () => {
               fontWeight="normal"
               letterSpacing={2}
               color="white"
-              px={{ base: "1.5rem", md: "1.5rem" }}
               textAlign="justify"
             >
               Tenho desejo por aprender e sempre gostei dos estudos no que se
@@ -114,7 +95,6 @@ const Subhero: React.FC = () => {
               fontWeight="normal"
               letterSpacing={2}
               color="white"
-              px={{ base: "1.5rem", md: "1.5rem" }}
               textAlign="justify"
             >
               Apos formado decidi transicionar de carreira para à programação,
@@ -123,12 +103,8 @@ const Subhero: React.FC = () => {
               projetos desafiantes que possam contribuir para as pessoas!
             </Text>
           </Flex>
-          <Image
-            maxW={{ base: "1.4rem", md: "2rem" }}
-            alt="section"
-            opacity={0.5}
-            src="/assets/p-2.svg"
-          />
+
+          <DivImages src="/assets/p-2.svg" />
         </SlideFade>
       </Flex>
     </Flex>

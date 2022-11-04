@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <ScaleFade in={inViewport} delay={0.5} whileHover={{ scale: 1.05 }}>
               <Button
                 ref={ref}
-                borderRadius="block"
+                borderRadius="0.5rem"
                 border="1px"
                 fontSize={{ lg: "26px" }}
                 w="max-content"
