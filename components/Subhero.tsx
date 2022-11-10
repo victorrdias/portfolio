@@ -1,14 +1,5 @@
 import React, { useRef } from "react";
-import {
-  Flex,
-  Text,
-  Image,
-  ScaleFade,
-  SlideFade,
-  Icon,
-  IconButton,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Text, SlideFade, Grid, GridItem } from "@chakra-ui/react";
 import { useInViewport } from "react-in-viewport";
 import DivImages from "./DivImages";
 import { AiOutlineHtml5 } from "react-icons/ai";
@@ -17,6 +8,7 @@ import { RiReactjsFill } from "react-icons/ri";
 import {
   SiChakraui,
   SiFigma,
+  SiFirebase,
   SiJira,
   SiNextdotjs,
   SiVercel,
@@ -129,31 +121,43 @@ const Subhero: React.FC = () => {
           </SlideFade>
         </Flex>
       </Flex>
-      <Flex
-        py="6.5rem"
-        as="aside"
-        w="max-content"
-        h="100%"
-        gap="2.5rem"
-        fontSize="3rem"
+      <Grid
+        as="section"
+        opacity={0.35}
+        templateColumns="repeat(3, 1fr)"
+        color="primaryColor"
+        py={{ base: "3rem", lg: "6.5rem" }}
+        w="100%"
+        fontSize={{ base: "4rem", md: "5rem", lg: "3rem", xl: "4rem" }}
+        gap={{ base: "", md: "", lg: "2rem", xl: "5rem" }}
       >
-        <Flex direction="column" gap="2.5rem" color="primaryColor">
+        <Flex direction="column" gap={{ base: "5rem", md: "7rem" }}>
           <AiOutlineHtml5 />
           <IoLogoCss3 />
           <RiReactjsFill />
-          <SiChakraui />
         </Flex>
-
-        <Flex direction="column" gap="2.5rem" color="primaryColor">
-          <SiNextdotjs />
+        <Flex
+          direction="column"
+          gap={{ base: "5rem", md: "7rem" }}
+          align="center"
+          justify="space-between"
+        >
+          <SiChakraui />
+          <Text fontSize="24" fontWeight="bold">
+            TeckStack
+          </Text>
           <SiJira />
+        </Flex>
+        <Flex
+          direction="column"
+          align="flex-end"
+          gap={{ base: "5rem", md: "7rem" }}
+        >
           <SiVercel />
           <SiFigma />
+          <SiFirebase />
         </Flex>
-      </Flex>
-      {/* <Flex bgColor="white" w="100rem" h="20rem" mt="6.8rem">
-        a
-      </Flex> */}
+      </Grid>
     </Flex>
   );
 };
