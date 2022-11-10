@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
           whileHover={{ scale: 1.025 }}
         >
           <Flex as="h2" direction="column">
-            <DivImages src="/assets/h2-1.svg" />
+            <DivImages src="/assets/h2-1.svg" size="1.5rem" />
             <Text
               color="primaryColor"
               fontWeight="bold"
@@ -43,7 +43,7 @@ const Skills: React.FC = () => {
               Habilidades
             </Text>
 
-            <DivImages src="/assets/h2-2.svg" />
+            <DivImages src="/assets/h2-2.svg" size="1.8rem" />
           </Flex>
         </SlideFade>
         <Flex
@@ -54,7 +54,7 @@ const Skills: React.FC = () => {
           direction="column"
         >
           <SlideFade delay={0.4} offsetY="10px" in={inViewport}>
-            <DivImages src="/assets/p-1.svg" />
+            <DivImages src="/assets/p-1.svg" size="1.5rem" />
             <Flex
               direction="column"
               gap={{ base: "1rem", md: "2.5rem" }}
@@ -102,7 +102,7 @@ const Skills: React.FC = () => {
                 CleanCode, assim como o uso e o dominio do Git.
               </Text>
             </Flex>
-            <DivImages src="/assets/p-2.svg" />
+            <DivImages src="/assets/p-2.svg" size="1.8rem" />
           </SlideFade>
         </Flex>
       </Flex>

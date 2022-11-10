@@ -36,7 +36,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
         whileHover={{ scale: 1.025 }}
       >
         <Flex as="h2" direction="column" align="flex-start">
-          <DivImages src="/assets/h2-1.svg" />
+          <DivImages src="/assets/h2-1.svg" size="1.5rem" />
           <Text
             color="#54edba"
             py={{ base: "0.5rem", md: "1rem" }}
@@ -48,11 +48,11 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           >
             Meus Projetos
           </Text>
-          <DivImages src="/assets/h2-2.svg" />
+          <DivImages src="/assets/h2-2.svg" size="1.8rem" />
         </Flex>
       </SlideFade>
       <Flex as="section" direction="column" gap="1rem">
-        <DivImages src="/assets/section1.svg" />
+        <DivImages src="/assets/section1.svg" size="4rem" />
 
         <Flex direction="column" gap="2rem">
           {projectContent.map((project) => (
@@ -65,7 +65,7 @@ const MyProjects: React.FC<{ projectContent: ProjectProps[] }> = () => {
           ))}
         </Flex>
 
-        <DivImages src="/assets/section2.svg" />
+        <DivImages src="/assets/section2.svg" size="4rem" />
       </Flex>
     </Flex>
   );

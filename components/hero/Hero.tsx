@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           w={{ base: "100vw", md: "100%" }}
         >
           <Flex direction="column" as="h1" py="2">
-            <DivImages src="/assets/h2-1.svg" />
+            <DivImages src="/assets/h2-1.svg" size="1.5rem" />
             <SlideFade
               offsetY="80px"
               in={inViewport}
@@ -95,7 +95,7 @@ const Hero: React.FC = () => {
             >
               <Typical steps={["Desenvolvedor Front-end", 10]} />
             </Text>
-            <DivImages src="/assets/h2-2.svg" />
+            <DivImages src="/assets/h2-2.svg" size="1.8rem" />
           </Flex>
           <Flex
             as="section"
