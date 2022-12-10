@@ -18,9 +18,7 @@ const Header: React.FC = () => {
       zIndex={1}
       opacity={0.65}
     >
-      <Text color="white" display={{ base: "none", md: "flex" }}>
-        vituxodev caraio
-      </Text>
+      <Text color="white" display={{ base: "none", md: "flex" }}></Text>
       <WebNav />
       <MobileNav />
     </Flex>

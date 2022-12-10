@@ -71,13 +71,13 @@ const ProgressBars: React.FC = () => {
             letterSpacing={1.5}
             lineHeight={{ base: "0,5", md: "1" }}
           >
-            Back-end
+            Git
           </Text>
           <Progress
             size="xs"
             colorScheme="pink"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"
-            value={40}
+            value={90}
           ></Progress>
         </SlideFade>
         <SlideFade

@@ -62,53 +62,36 @@ const Subhero: React.FC = () => {
             lg: "35rem",
             xl: "45rem",
           }}
-          minH="29rem"
           borderRadius="20"
           direction="column"
         >
           <SlideFade offsetY="30px" in={inViewport} delay={0.3}>
             <DivImages src="/assets/p-1.svg" size="1.5rem" />
             <Flex
+              fontSize={{ base: "14", md: "20", lg: "20" }}
+              lineHeight={{ base: "24px", md: "26px" }}
+              fontWeight="normal"
+              letterSpacing={2}
+              color="white"
+              textAlign="justify"
               direction="column"
               gap={{ base: "1rem", md: "2rem" }}
               as="section"
               maxW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
               minW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
             >
-              <Text
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                textAlign="justify"
-              >
+              <Text>
                 Sou desenvolvedor front-end, morando no interior de Sao Paulo,
                 historiador de formação pela Universidade Estadual de São Paulo,
                 multi-instrumentista e fui musico profissional por muitos anos,
                 portanto, criatividade e meu forte!
               </Text>
-              <Text
-                ref={ref}
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                textAlign="justify"
-              >
+              <Text ref={ref}>
                 Tenho desejo por aprender e sempre gostei dos estudos no que se
                 refere à história, e como a união com a tecnologia beneficia
                 seus estudos.
               </Text>
-              <Text
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                textAlign="justify"
-              >
+              <Text>
                 Apos formado decidi transicionar de carreira para à programação,
                 com a ajuda dos meus amigos programadores, comecei a me
                 aprofundar nessa área e me apaixonei pelo design de interfaces e
@@ -121,7 +104,7 @@ const Subhero: React.FC = () => {
           </SlideFade>
         </Flex>
       </Flex>
-      <Grid
+      {/* <Grid
         as="section"
         opacity={0.35}
         templateColumns="repeat(3, 1fr)"
@@ -156,8 +139,8 @@ const Subhero: React.FC = () => {
           <SiVercel />
           <SiFigma />
           <SiFirebase />
-        </Flex>
-      </Grid>
+        </Flex> */}
+      {/* </Grid> */}
     </Flex>
   );
 };

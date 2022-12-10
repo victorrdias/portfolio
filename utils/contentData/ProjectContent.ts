@@ -14,9 +14,9 @@ export const projectContent: ProjectProps[] = [
     link: "https://github.com/victorrdias/pokedex",
   },
   {
-    image: "/assets/gastura.png",
+    image: "/assets/ajuize-img.png",
     description:
       "Ajuize esta sendo meu primeiro projeto profissional, ainda em progresso, trata-se de uma ideia de automatizacao no setor juridico, construido com um time, utilizando-nos de plataformas como o Jira, o Miro, Figma.",
-    link: "https://github.com/cptvictor95/gastura",
+    link: "https://github.com/dr34mlaw/web",
   },
 ];

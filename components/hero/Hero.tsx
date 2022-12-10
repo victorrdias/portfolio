@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Typical from "react-typical";
 import dynamic from "next/dynamic";
-
 import { Flex, Grid, GridItem, Image, SlideFade, Text } from "@chakra-ui/react";
 import { useInViewport } from "react-in-viewport";
 import DivImages from "../DivImages";
@@ -16,6 +15,7 @@ const Hero: React.FC = () => {
     { rootMargin: "0px" },
     { disconnectOnLeave: false }
   );
+
   return (
     <Flex minH="100vh" h="100vh" maxW="100vw" bgColor="#1d1d1d" as="section">
       <Image

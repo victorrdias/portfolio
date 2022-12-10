@@ -1,13 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Image,
-  Link,
-  ScaleFade,
-  SlideFade,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, SlideFade, Text } from "@chakra-ui/react";
 import React, { useRef } from "react";
 import { useInViewport } from "react-in-viewport";
 import { projectContent } from "../../utils/contentData/ProjectContent";

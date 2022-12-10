@@ -55,20 +55,19 @@ const Skills: React.FC = () => {
         >
           <SlideFade delay={0.4} offsetY="10px" in={inViewport}>
             <DivImages src="/assets/p-1.svg" size="1.5rem" />
+
             <Flex
               direction="column"
               gap={{ base: "1rem", md: "2.5rem" }}
               as="section"
+              fontSize={{ base: "14", md: "20", lg: "20" }}
+              lineHeight={{ base: "24px", md: "26px" }}
+              fontWeight="normal"
+              letterSpacing={2}
+              color="white"
+              textAlign="justify"
             >
-              <Text
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                //px={{ base: "1.4rem", md: "1.5rem" }}
-                textAlign="justify"
-              >
+              <Text>
                 Possuo conhecimento solido em HTML, JavaScript e CSS, atuo
                 desenvolvendo interfaces totalmente responsivas, utilizando o
                 princípio do Mobile First, com a biblioteca ReactJS. Também faço
@@ -76,27 +75,12 @@ const Skills: React.FC = () => {
                 Typescript.
               </Text>
 
-              <Text
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                ref={ref}
-                textAlign="justify"
-              >
+              <Text ref={ref}>
                 Atualmente desenvolvo com a biblioteca CSS ChakraUI, possuindo
                 também experiencia em TailWindCSS, além de possuir conhecimentos
                 consistentes em consumo de API e Firebase.
               </Text>
-              <Text
-                fontSize={{ base: "14", md: "20", lg: "20" }}
-                lineHeight={{ base: "24px", md: "26px" }}
-                fontWeight="normal"
-                letterSpacing={2}
-                color="white"
-                textAlign="justify"
-              >
+              <Text>
                 Desde o início da minha jornada na programação mantenho o foco
                 em aplicar boas práticas, seguindo padrões já consagrados como o
                 CleanCode, assim como o uso e o dominio do Git.
