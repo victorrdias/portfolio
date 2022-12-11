@@ -104,43 +104,6 @@ const Subhero: React.FC = () => {
           </SlideFade>
         </Flex>
       </Flex>
-      {/* <Grid
-        as="section"
-        opacity={0.35}
-        templateColumns="repeat(3, 1fr)"
-        color="primaryColor"
-        py={{ base: "3rem", lg: "6.5rem" }}
-        w="100%"
-        fontSize={{ base: "4rem", md: "5rem", lg: "3rem", xl: "4rem" }}
-        gap={{ base: "", md: "", lg: "2rem", xl: "5rem" }}
-      >
-        <Flex direction="column" gap={{ base: "5rem", md: "7rem" }}>
-          <AiOutlineHtml5 />
-          <IoLogoCss3 />
-          <RiReactjsFill />
-        </Flex>
-        <Flex
-          direction="column"
-          gap={{ base: "5rem", md: "7rem" }}
-          align="center"
-          justify="space-between"
-        >
-          <SiChakraui />
-          <Text fontSize="24" fontWeight="bold">
-            TeckStack
-          </Text>
-          <SiJira />
-        </Flex>
-        <Flex
-          direction="column"
-          align="flex-end"
-          gap={{ base: "5rem", md: "7rem" }}
-        >
-          <SiVercel />
-          <SiFigma />
-          <SiFirebase />
-        </Flex> */}
-      {/* </Grid> */}
     </Flex>
   );
 };

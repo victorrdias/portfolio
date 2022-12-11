@@ -66,9 +66,9 @@ const Project: React.FC<ProjectProps> = ({ image, description, link }) => {
         <SlideFade offsetY="100px" delay={0.2} in={inViewport}>
           <Text
             p="0.5rem"
-            h={{ md: "max-content", lg: "18rem" }}
+            minH={{ md: "max-content", lg: "18rem" }}
             w="100%"
-            fontSize={{ base: "12", md: "16", lg: "16" }}
+            fontSize={{ base: "12", md: "14", lg: "14" }}
             lineHeight={{ base: "20px", md: "24px" }}
             fontWeight="normal"
             letterSpacing={1.75}
