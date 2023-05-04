@@ -93,7 +93,7 @@ const Hero: React.FC = () => {
               fontWeight="bold"
               letterSpacing={2}
             >
-              <Typical steps={["Desenvolvedor Front-end", 10]} />
+              <Typical steps={["Desenvolvedor Full Stack", 10]} />
             </Text>
             <DivImages src="/assets/h2-2.svg" size="1.8rem" />
           </Flex>

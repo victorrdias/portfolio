@@ -69,21 +69,24 @@ const Skills: React.FC = () => {
             >
               <Text>
                 Possuo conhecimento solido em HTML, JavaScript e CSS, atuo
-                desenvolvendo interfaces totalmente responsivas, utilizando o
-                princípio do Mobile First, com a biblioteca ReactJS. Também faço
-                uso do Framework NextJS e a plataforma NodeJS, unidos ao
-                Typescript.
+                desenvolvendo aplicações completas, totalmente responsivas,
+                utilizando o princípio do Mobile First, com a biblioteca
+                ReactJS. Também faço uso do Framework NextJS e a plataforma
+                NodeJS, unidos ao Typescript.
               </Text>
 
               <Text ref={ref}>
                 Atualmente desenvolvo com a biblioteca CSS ChakraUI, possuindo
-                também experiencia em TailWindCSS, além de possuir conhecimentos
-                consistentes em consumo de API e Firebase.
+                também experiencia em TailWindCSS, conhecimentos consistentes em
+                consumo de API pelo frontend, além de ter conforto para utilizar
+                ferramentas como Firebase, Firestore e Strapi.
               </Text>
               <Text>
                 Desde o início da minha jornada na programação mantenho o foco
                 em aplicar boas práticas, seguindo padrões já consagrados como o
-                CleanCode, assim como o uso e o dominio do Git.
+                CleanCode, assim como experiência no uso de Git e GitHub tanto
+                quanto ferramentas de versionamento de código como Jira e
+                similares.
               </Text>
             </Flex>
             <DivImages src="/assets/p-2.svg" size="1.8rem" />

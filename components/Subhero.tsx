@@ -1,18 +1,7 @@
 import React, { useRef } from "react";
-import { Flex, Text, SlideFade, Grid, GridItem } from "@chakra-ui/react";
+import { Flex, Text, SlideFade } from "@chakra-ui/react";
 import { useInViewport } from "react-in-viewport";
 import DivImages from "./DivImages";
-import { AiOutlineHtml5 } from "react-icons/ai";
-import { IoLogoCss3 } from "react-icons/io";
-import { RiReactjsFill } from "react-icons/ri";
-import {
-  SiChakraui,
-  SiFigma,
-  SiFirebase,
-  SiJira,
-  SiNextdotjs,
-  SiVercel,
-} from "react-icons/si";
 
 const Subhero: React.FC = () => {
   const ref = useRef(null);
@@ -81,7 +70,7 @@ const Subhero: React.FC = () => {
               minW={{ base: "", md: "", lg: "33rem", xl: "37.5rem" }}
             >
               <Text>
-                Sou desenvolvedor front-end, morando no interior de Sao Paulo,
+                Sou desenvolvedor fullstack, morando no interior de São Paulo,
                 historiador de formação pela Universidade Estadual de São Paulo,
                 multi-instrumentista e fui musico profissional por muitos anos,
                 portanto, criatividade e meu forte!
@@ -94,9 +83,8 @@ const Subhero: React.FC = () => {
               <Text>
                 Apos formado decidi transicionar de carreira para à programação,
                 com a ajuda dos meus amigos programadores, comecei a me
-                aprofundar nessa área e me apaixonei pelo design de interfaces e
-                desenvolver projetos desafiantes que possam contribuir para as
-                pessoas!
+                aprofundar nessa área e me apaixonei por desenvolver projetos
+                desafiantes que possam contribuir para as pessoas!
               </Text>
             </Flex>
 
