@@ -17,12 +17,12 @@ export const projectContent: ProjectProps[] = [
     image: "/assets/gastura.png",
     description:
       "Gastura foi o primeiro projeto que eu participei, ele teve sua primeira versão desenvolvida com o auxílio de um amigo, com o intuito de me ensinar, e depois entregue a mim, para que eu pudesse desenvolve-lo e aprender na pratica! Nele, criamos uma maneira de para auxiliar no controle de gastos e ganhos, podendo ser muito útil na educação financeira. Neste projeto utilizamos NextJS, Firebase e Firestore, sendo hospedado na Vercel, além do React e do Typescript.",
-    link: "https://github.com/cptvictor95/gastura",
+    link: "https://gastura.vercel.app",
   },
   {
     image: "/assets/pokedex.png",
     description:
       "Pokedex foi um projeto que foi construido visando o desenvolvimento na área, o aprendizado. Consumindo a API Pokedex, acessamos os dados de todos os pokemons e com isso o projeto possui uma série de features interativas, feitas do zero. A enfase deste projeto de estudos foi a manipulação dos dados consumidos pela API, e as boas práticas de usa-lás ao nosso favor na hora de codar.",
-    link: "https://github.com/victorrdias/pokedex",
+    link: "https://pokedex-ten-ruddy.vercel.app",
   },
 ];
